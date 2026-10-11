@@ -1,0 +1,144 @@
+{
+  "args": {
+    "K": 8,
+    "kmax_full": 128,
+    "nus": [
+      0.5,
+      0.2,
+      0.1,
+      0.05,
+      0.02
+    ],
+    "regimes": [
+      "full"
+    ],
+    "n_traj": 200,
+    "n_test": 40,
+    "t_final": 2.0,
+    "dt": 0.001,
+    "save_every": 20,
+    "amp": 1.0,
+    "mean_amp": 0.5,
+    "kmax_ic": null,
+    "ridge": 1e-10,
+    "method": "lstsq",
+    "stlsq_thresh": 0.02,
+    "stlsq_iter": 8,
+    "energy_constraint": false,
+    "closure": "cubic",
+    "mask_selection": false,
+    "label": null,
+    "k_show": 3,
+    "seed": 0,
+    "quick": false,
+    "out": "runs/V2d_cubic"
+  },
+  "label": "lstsq+cubic",
+  "results": [
+    {
+      "nu": 0.5,
+      "regime": "full",
+      "label": "lstsq+cubic",
+      "metrics": {
+        "rel_err_T": 0.3033199154963828,
+        "rel_err_T_on_rule": 0.024313305685270903,
+        "selection_mass": 0.5965874275177707,
+        "max_off_rule_ratio": 0.333844595705749,
+        "rel_err_A_diag": 0.008980938336069421,
+        "offdiag_A_ratio": 0.004222148929701174,
+        "n_nonzero_T": 2432,
+        "n_nonzero_C": 15476,
+        "energy_violation": 5.869933034776166e-05,
+        "cubic_to_quad_ratio": 0.07481743551030816,
+        "test_rel_err_dzdt": 0.02365372623971031,
+        "rollout_rel_err_final": 7.59248576618123e-05,
+        "time_sim_s": 61.8,
+        "time_fit_s": 5.7
+      }
+    },
+    {
+      "nu": 0.2,
+      "regime": "full",
+      "label": "lstsq+cubic",
+      "metrics": {
+        "rel_err_T": 0.42966679636439814,
+        "rel_err_T_on_rule": 0.054196808399227546,
+        "selection_mass": 0.5303999940840867,
+        "max_off_rule_ratio": 0.44892161661132274,
+        "rel_err_A_diag": 0.04787173675086914,
+        "offdiag_A_ratio": 0.007464767781962273,
+        "n_nonzero_T": 2448,
+        "n_nonzero_C": 15502,
+        "energy_violation": 0.0002160508327559734,
+        "cubic_to_quad_ratio": 0.08382245602450175,
+        "test_rel_err_dzdt": 0.04923403411653436,
+        "rollout_rel_err_final": 0.0001678541947417825,
+        "time_sim_s": 63.5,
+        "time_fit_s": 5.3
+      }
+    },
+    {
+      "nu": 0.1,
+      "regime": "full",
+      "label": "lstsq+cubic",
+      "metrics": {
+        "rel_err_T": 0.5385639813888005,
+        "rel_err_T_on_rule": 0.1097390690835666,
+        "selection_mass": 0.4843570012392494,
+        "max_off_rule_ratio": 0.48412216724180457,
+        "rel_err_A_diag": 0.1373174674948998,
+        "offdiag_A_ratio": 0.018346895620727676,
+        "n_nonzero_T": 2448,
+        "n_nonzero_C": 15504,
+        "energy_violation": 0.0009999929587015549,
+        "cubic_to_quad_ratio": 0.12291092159457873,
+        "test_rel_err_dzdt": 0.10560213249674583,
+        "rollout_rel_err_final": 0.0009634427068272695,
+        "time_sim_s": 64.3,
+        "time_fit_s": 5.3
+      }
+    },
+    {
+      "nu": 0.05,
+      "regime": "full",
+      "label": "lstsq+cubic",
+      "metrics": {
+        "rel_err_T": 0.7653353091280971,
+        "rel_err_T_on_rule": 0.18534909151937143,
+        "selection_mass": 0.40375608333097424,
+        "max_off_rule_ratio": 0.7179037539485872,
+        "rel_err_A_diag": 0.38396938887992366,
+        "offdiag_A_ratio": 0.0639457365004133,
+        "n_nonzero_T": 2448,
+        "n_nonzero_C": 15504,
+        "energy_violation": 0.004364733707980208,
+        "cubic_to_quad_ratio": 0.23377564488119493,
+        "test_rel_err_dzdt": 0.23051736435859152,
+        "rollout_rel_err_final": 0.01222312901857827,
+        "time_sim_s": 63.9,
+        "time_fit_s": 5.3
+      }
+    },
+    {
+      "nu": 0.02,
+      "regime": "full",
+      "label": "lstsq+cubic",
+      "metrics": {
+        "rel_err_T": 0.9370171626210043,
+        "rel_err_T_on_rule": 0.25319755332481664,
+        "selection_mass": 0.3322793933848466,
+        "max_off_rule_ratio": 0.7464784902289138,
+        "rel_err_A_diag": 1.527189689804694,
+        "offdiag_A_ratio": 0.19054487154673377,
+        "n_nonzero_T": 2448,
+        "n_nonzero_C": 15504,
+        "energy_violation": 0.011512800361125175,
+        "cubic_to_quad_ratio": 0.39344619099443484,
+        "test_rel_err_dzdt": 0.3860089969827638,
+        "rollout_rel_err_final": 0.21338364950300925,
+        "time_sim_s": 63.4,
+        "time_fit_s": 5.0
+      }
+    }
+  ]
+}

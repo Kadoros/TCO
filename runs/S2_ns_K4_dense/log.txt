@@ -1,0 +1,9 @@
+args: {"K": 4, "nus": [0.02, 0.01, 0.005], "alpha": 0.1, "F": 1.0, "nf": 2, "regimes": ["closed", "full"], "N_full": 64, "n_traj": 128, "n_test": 8, "t_spin": 10.0, "t_rec": 5.0, "dt": 0.01, "save_every": 10, "amp": 2.0, "dense": true, "seed": 0, "device": "cuda", "quick": false, "out": "runs/S2_ns_K4_dense"}
+modes n=80; features/output: dense ~3321 (dense would need 3321); device=cuda
+[NS dense nu=0.02   closed] Trel=4.06e-01 Trule=6.90e-02 Tsel=0.201 T(|k|<=K/2)=1.6e+00 Adiag=1.72e-01 forcing=6.6e-01 dz=5.20e-01 closure=9.8e-16 nu_t_err=3.3e+14 roll_short=4.8e-02 spec=1.6e-01 (sim 12.7s fit 1152.3s)
+[NS dense nu=0.02   full  ] Trel=1.49e+01 Trule=1.19e+00 Tsel=0.010 T(|k|<=K/2)=1.3e+00 Adiag=3.12e+00 forcing=1.7e+00 dz=1.31e+01 closure=6.7e-01 nu_t_err=1.5e+00 roll_short=inf spec=inf (sim 19.9s fit 885.4s)
+[NS dense nu=0.01   closed] Trel=4.37e-08 Trule=3.91e-09 Tsel=1.000 T(|k|<=K/2)=1.2e-07 Adiag=1.38e-08 forcing=2.7e-08 dz=5.66e-08 closure=6.0e-16 nu_t_err=2.0e+07 roll_short=1.1e-08 spec=8.9e-09 (sim 4.1s fit 889.3s)
+[NS dense nu=0.01   full  ] Trel=1.98e+01 Trule=1.53e+00 Tsel=0.010 T(|k|<=K/2)=4.6e-01 Adiag=3.93e+00 forcing=6.2e+00 dz=2.15e+01 closure=5.3e-01 nu_t_err=1.2e+01 roll_short=inf spec=inf (sim 9.0s fit 868.2s)
+[NS dense nu=0.005  closed] Trel=2.42e-09 Trule=2.20e-10 Tsel=1.000 T(|k|<=K/2)=6.5e-09 Adiag=9.62e-10 forcing=1.7e-09 dz=3.06e-09 closure=4.9e-16 nu_t_err=3.1e+06 roll_short=8.1e-10 spec=1.2e-09 (sim 4.0s fit 881.1s)
+[NS dense nu=0.005  full  ] Trel=2.21e+01 Trule=1.84e+00 Tsel=0.010 T(|k|<=K/2)=4.6e-01 Adiag=3.63e+00 forcing=6.3e+00 dz=2.07e+01 closure=4.7e-01 nu_t_err=7.3e-01 roll_short=inf spec=inf (sim 8.8s fit 869.3s)
+saved to runs/S2_ns_K4_dense

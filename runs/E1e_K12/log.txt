@@ -1,0 +1,3 @@
+args: {"K": 12, "kmax_full": 128, "nus": [0.1], "regimes": ["full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": 12, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 5, "noise": 0.0, "k_show": 3, "seed": 0, "quick": false, "out": "runs/E1e_K12"}
+[nu=0.1   full  ] relT=4.04e-01 relT_rule=3.12e-02 sel=0.518 offRule=4.22e-01 Ediag=1.98e-02 Eviol=1.13e-04 test_dz=2.59e-02 rollout=2.20e-04  (67.7s)
+saved to runs/E1e_K12

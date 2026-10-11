@@ -1,0 +1,12 @@
+args: {"pde": "burgers", "basis": "pod", "params": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": null, "save_every": null, "amp": null, "mean_amp": null, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "closure": "none", "label": null, "seed": 0, "quick": false, "out": "runs/M6a_burgers_pod"}
+[burgers pod+lstsq p=0.5   closed] Trel=3.54e-13 Trule=6.09e-14 Tsel=1.000 Arel=1.30e-14 span=1.1e-15 purity=0.946 eig_purity=1.000 dz=1.71e-14 roll_short=5.5e-12 spec=5.7e-12 (sim 47.8s fit 1.0s)
+[burgers pod+lstsq p=0.5   full  ] Trel=3.03e-02 Trule=6.61e-03 Tsel=0.958 Arel=1.03e-03 span=6.3e-06 purity=0.947 eig_purity=1.000 dz=2.22e-03 roll_short=7.0e-05 spec=4.5e-06 (sim 65.6s fit 0.9s)
+[burgers pod+lstsq p=0.2   closed] Trel=1.48e-13 Trule=3.19e-14 Tsel=1.000 Arel=1.36e-14 span=1.4e-15 purity=0.963 eig_purity=1.000 dz=1.62e-14 roll_short=2.4e-12 spec=6.2e-13 (sim 37.1s fit 0.9s)
+[burgers pod+lstsq p=0.2   full  ] Trel=8.53e-02 Trule=1.55e-02 Tsel=0.889 Arel=1.13e-02 span=6.3e-05 purity=0.964 eig_purity=1.000 dz=1.24e-02 roll_short=1.5e-03 spec=4.7e-05 (sim 79.0s fit 1.1s)
+[burgers pod+lstsq p=0.1   closed] Trel=8.81e-14 Trule=2.19e-14 Tsel=1.000 Arel=1.55e-14 span=1.5e-15 purity=0.968 eig_purity=1.000 dz=1.47e-14 roll_short=3.4e-12 spec=6.6e-13 (sim 86.5s fit 2.1s)
+[burgers pod+lstsq p=0.1   full  ] Trel=2.07e-01 Trule=4.23e-02 Tsel=0.790 Arel=5.94e-02 span=4.1e-04 purity=0.973 eig_purity=1.000 dz=3.92e-02 roll_short=5.5e-03 spec=4.2e-04 (sim 133.0s fit 1.7s)
+[burgers pod+lstsq p=0.05  closed] Trel=3.96e-14 Trule=1.46e-14 Tsel=1.000 Arel=1.99e-14 span=1.5e-15 purity=0.932 eig_purity=1.000 dz=1.21e-14 roll_short=5.8e-12 spec=2.0e-12 (sim 70.5s fit 1.0s)
+[burgers pod+lstsq p=0.05  full  ] Trel=3.49e-01 Trule=9.50e-02 Tsel=0.686 Arel=2.50e-01 span=3.1e-03 purity=0.971 eig_purity=0.998 dz=9.41e-02 roll_short=1.1e-02 spec=3.6e-03 (sim 104.2s fit 1.6s)
+[burgers pod+lstsq p=0.02  closed] Trel=1.66e-14 Trule=1.06e-14 Tsel=1.000 Arel=2.05e-14 span=1.2e-15 purity=0.810 eig_purity=1.000 dz=9.74e-15 roll_short=6.5e-12 spec=4.6e-12 (sim 59.0s fit 1.3s)
+[burgers pod+lstsq p=0.02  full  ] Trel=4.41e-01 Trule=1.55e-01 Tsel=0.613 Arel=1.03e+00 span=1.0e-02 purity=0.959 eig_purity=0.991 dz=1.86e-01 roll_short=2.0e-02 spec=1.7e-02 (sim 83.5s fit 1.0s)
+saved to runs/M6a_burgers_pod

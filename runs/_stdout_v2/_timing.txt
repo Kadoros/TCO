@@ -1,0 +1,9 @@
+V2e_mask rc=0 wall=320s maxRSS_kB=296240
+V2b_energy rc=0 wall=321s maxRSS_kB=362468
+V2f_mask_energy rc=0 wall=325s maxRSS_kB=362424
+V2c_energy_stlsq rc=0 wall=333s maxRSS_kB=363156
+V2d_cubic rc=0 wall=344s maxRSS_kB=1844780
+V2g_mask_cubic rc=0 wall=356s maxRSS_kB=1844508
+V2h_mask_cubic_energy rc=0 wall=360s maxRSS_kB=2094824
+V2a_stlsq rc=0 wall=476s maxRSS_kB=301344
+ALLDONE

@@ -1,0 +1,6 @@
+args: {"pde": "burgers", "basis": "fourier", "params": [0.5, 0.2], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 48, "n_traj": 40, "n_test": 10, "t_final": 0.5, "dt": null, "save_every": null, "amp": null, "mean_amp": null, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "closure": "none", "label": null, "seed": 0, "quick": true, "out": "runs/M6_smoke_fourier"}
+[burgers fourier+lstsq p=0.5   closed] Trel=4.73e-08 Trule=7.72e-09 Tsel=1.000 Arel=1.68e-09 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=2.44e-09 roll_short=2.0e-10 spec=1.5e-11 (sim 1.8s fit 0.2s)
+[burgers fourier+lstsq p=0.5   full  ] Trel=1.14e+00 Trule=1.56e-01 Tsel=0.402 Arel=1.64e-02 span=1.6e-15 purity=1.000 eig_purity=0.999 dz=4.01e-02 roll_short=4.3e-03 spec=1.3e-04 (sim 2.5s fit 0.2s)
+[burgers fourier+lstsq p=0.2   closed] Trel=8.64e-09 Trule=2.61e-09 Tsel=1.000 Arel=6.05e-10 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=1.37e-09 roll_short=1.1e-10 spec=8.1e-11 (sim 1.8s fit 0.2s)
+[burgers fourier+lstsq p=0.2   full  ] Trel=1.47e+00 Trule=2.41e-01 Tsel=0.316 Arel=5.75e-02 span=1.6e-15 purity=1.000 eig_purity=0.997 dz=1.38e-01 roll_short=1.1e-02 spec=2.0e-03 (sim 2.4s fit 0.2s)
+saved to runs/M6_smoke_fourier

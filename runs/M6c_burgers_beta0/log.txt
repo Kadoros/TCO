@@ -1,0 +1,142 @@
+args: {"pde": "burgers", "params": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 128, "n_traj": 200, "n_test": 40, "beta": 0.0, "steps": 3000, "lr": 0.002, "width": 64, "depth": 3, "ridge": 1e-08, "method": "lstsq", "seed": 0, "device": "cuda", "quick": false, "out": "runs/M6c_burgers_beta0"}
+[burgers p=0.5 closed] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 7.031e-05  dyn 0.000e+00
+    step 300: recon 2.043e-08  dyn 0.000e+00
+    step 600: recon 8.944e-09  dyn 0.000e+00
+    step 900: recon 4.781e-09  dyn 0.000e+00
+    step 1200: recon 3.951e-09  dyn 0.000e+00
+    step 1500: recon 2.504e-09  dyn 0.000e+00
+    step 1800: recon 2.117e-09  dyn 0.000e+00
+    step 2100: recon 1.902e-09  dyn 0.000e+00
+    step 2400: recon 1.791e-09  dyn 0.000e+00
+    step 2700: recon 1.747e-09  dyn 0.000e+00
+    step 2999: recon 1.740e-09  dyn 0.000e+00
+[burgers p=0.5   closed trunk] Trel=6.26e-07 Trule=4.90e-07 Tsel=1.000 Arel=1.37e-07 span=4.4e-07 recon=4.4e-05 purity=0.790 eig_purity=1.000 dz=3.53e-14 roll_short=5.5e-12 spec=6.2e-12
+[burgers p=0.5   closed pod  ] Trel=3.71e-13 Trule=6.51e-14 Tsel=1.000 Arel=1.46e-14 span=1.3e-15 recon=1.2e-15 purity=0.946 eig_purity=1.000 dz=1.80e-14 roll_short=5.5e-12 spec=5.7e-12
+[burgers p=0.5 full] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 6.980e-05  dyn 0.000e+00
+    step 300: recon 8.528e-07  dyn 0.000e+00
+    step 600: recon 8.363e-07  dyn 0.000e+00
+    step 900: recon 8.292e-07  dyn 0.000e+00
+    step 1200: recon 8.266e-07  dyn 0.000e+00
+    step 1500: recon 8.248e-07  dyn 0.000e+00
+    step 1800: recon 8.236e-07  dyn 0.000e+00
+    step 2100: recon 8.228e-07  dyn 0.000e+00
+    step 2400: recon 8.221e-07  dyn 0.000e+00
+    step 2700: recon 8.218e-07  dyn 0.000e+00
+    step 2999: recon 8.217e-07  dyn 0.000e+00
+[burgers p=0.5   full   trunk] Trel=3.02e-02 Trule=6.59e-03 Tsel=0.958 Arel=1.03e-03 span=5.8e-06 recon=1.0e-03 purity=0.692 eig_purity=1.000 dz=2.22e-03 roll_short=7.0e-05 spec=4.1e-06
+[burgers p=0.5   full   pod  ] Trel=3.03e-02 Trule=6.61e-03 Tsel=0.958 Arel=1.03e-03 span=6.3e-06 recon=1.0e-03 purity=0.947 eig_purity=1.000 dz=2.22e-03 roll_short=7.0e-05 spec=4.5e-06
+[burgers p=0.2 closed] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 1.020e-04  dyn 0.000e+00
+    step 300: recon 3.132e-08  dyn 0.000e+00
+    step 600: recon 1.279e-08  dyn 0.000e+00
+    step 900: recon 6.772e-09  dyn 0.000e+00
+    step 1200: recon 4.723e-09  dyn 0.000e+00
+    step 1500: recon 3.643e-09  dyn 0.000e+00
+    step 1800: recon 3.086e-09  dyn 0.000e+00
+    step 2100: recon 2.780e-09  dyn 0.000e+00
+    step 2400: recon 2.620e-09  dyn 0.000e+00
+    step 2700: recon 2.556e-09  dyn 0.000e+00
+    step 2999: recon 2.546e-09  dyn 0.000e+00
+[burgers p=0.2   closed trunk] Trel=5.01e-07 Trule=3.79e-07 Tsel=1.000 Arel=1.10e-07 span=3.5e-07 recon=5.3e-05 purity=0.773 eig_purity=1.000 dz=2.96e-14 roll_short=2.4e-12 spec=7.0e-13
+[burgers p=0.2   closed pod  ] Trel=1.47e-13 Trule=3.09e-14 Tsel=1.000 Arel=1.39e-14 span=1.3e-15 recon=1.2e-15 purity=0.963 eig_purity=1.000 dz=1.64e-14 roll_short=2.4e-12 spec=6.2e-13
+[burgers p=0.2 full] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 1.093e-04  dyn 0.000e+00
+    step 300: recon 1.079e-05  dyn 0.000e+00
+    step 600: recon 1.081e-05  dyn 0.000e+00
+    step 900: recon 1.074e-05  dyn 0.000e+00
+    step 1200: recon 1.070e-05  dyn 0.000e+00
+    step 1500: recon 1.071e-05  dyn 0.000e+00
+    step 1800: recon 1.069e-05  dyn 0.000e+00
+    step 2100: recon 1.071e-05  dyn 0.000e+00
+    step 2400: recon 1.065e-05  dyn 0.000e+00
+    step 2700: recon 1.063e-05  dyn 0.000e+00
+    step 2999: recon 1.063e-05  dyn 0.000e+00
+[burgers p=0.2   full   trunk] Trel=8.51e-02 Trule=1.55e-02 Tsel=0.890 Arel=1.13e-02 span=5.6e-05 recon=3.6e-03 purity=0.752 eig_purity=1.000 dz=1.24e-02 roll_short=1.5e-03 spec=3.6e-05
+[burgers p=0.2   full   pod  ] Trel=8.53e-02 Trule=1.55e-02 Tsel=0.889 Arel=1.13e-02 span=6.3e-05 recon=3.6e-03 purity=0.964 eig_purity=1.000 dz=1.24e-02 roll_short=1.5e-03 spec=4.7e-05
+[burgers p=0.1 closed] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 2.051e-04  dyn 0.000e+00
+    step 300: recon 6.281e-08  dyn 0.000e+00
+    step 600: recon 2.374e-08  dyn 0.000e+00
+    step 900: recon 1.251e-08  dyn 0.000e+00
+    step 1200: recon 8.654e-09  dyn 0.000e+00
+    step 1500: recon 6.654e-09  dyn 0.000e+00
+    step 1800: recon 5.567e-09  dyn 0.000e+00
+    step 2100: recon 4.965e-09  dyn 0.000e+00
+    step 2400: recon 4.649e-09  dyn 0.000e+00
+    step 2700: recon 4.522e-09  dyn 0.000e+00
+    step 2999: recon 4.502e-09  dyn 0.000e+00
+[burgers p=0.1   closed trunk] Trel=4.45e-07 Trule=3.37e-07 Tsel=1.000 Arel=1.01e-07 span=3.2e-07 recon=7.0e-05 purity=0.753 eig_purity=1.000 dz=2.64e-14 roll_short=3.4e-12 spec=8.0e-13
+[burgers p=0.1   closed pod  ] Trel=8.33e-14 Trule=2.13e-14 Tsel=1.000 Arel=1.58e-14 span=1.5e-15 recon=1.2e-15 purity=0.968 eig_purity=1.000 dz=1.45e-14 roll_short=3.4e-12 spec=6.6e-13
+[burgers p=0.1 full] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 2.830e-04  dyn 0.000e+00
+    step 300: recon 1.129e-04  dyn 0.000e+00
+    step 600: recon 1.133e-04  dyn 0.000e+00
+    step 900: recon 1.125e-04  dyn 0.000e+00
+    step 1200: recon 1.124e-04  dyn 0.000e+00
+    step 1500: recon 1.123e-04  dyn 0.000e+00
+    step 1800: recon 1.119e-04  dyn 0.000e+00
+    step 2100: recon 1.119e-04  dyn 0.000e+00
+    step 2400: recon 1.120e-04  dyn 0.000e+00
+    step 2700: recon 1.119e-04  dyn 0.000e+00
+    step 2999: recon 1.119e-04  dyn 0.000e+00
+[burgers p=0.1   full   trunk] Trel=2.07e-01 Trule=4.23e-02 Tsel=0.791 Arel=5.93e-02 span=3.9e-04 recon=1.2e-02 purity=0.744 eig_purity=1.000 dz=3.92e-02 roll_short=5.5e-03 spec=6.6e-04
+[burgers p=0.1   full   pod  ] Trel=2.07e-01 Trule=4.23e-02 Tsel=0.790 Arel=5.94e-02 span=4.1e-04 recon=1.2e-02 purity=0.973 eig_purity=1.000 dz=3.92e-02 roll_short=5.5e-03 spec=4.2e-04
+[burgers p=0.05 closed] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 8.027e-04  dyn 0.000e+00
+    step 300: recon 2.129e-07  dyn 0.000e+00
+    step 600: recon 9.499e-08  dyn 0.000e+00
+    step 900: recon 5.149e-08  dyn 0.000e+00
+    step 1200: recon 3.163e-08  dyn 0.000e+00
+    step 1500: recon 2.378e-08  dyn 0.000e+00
+    step 1800: recon 1.968e-08  dyn 0.000e+00
+    step 2100: recon 1.734e-08  dyn 0.000e+00
+    step 2400: recon 1.611e-08  dyn 0.000e+00
+    step 2700: recon 1.562e-08  dyn 0.000e+00
+    step 2999: recon 1.554e-08  dyn 0.000e+00
+[burgers p=0.05  closed trunk] Trel=6.34e-07 Trule=5.19e-07 Tsel=1.000 Arel=1.41e-07 span=4.6e-07 recon=1.3e-04 purity=0.763 eig_purity=1.000 dz=2.07e-14 roll_short=5.8e-12 spec=2.1e-12
+[burgers p=0.05  closed pod  ] Trel=4.08e-14 Trule=1.49e-14 Tsel=1.000 Arel=2.17e-14 span=1.3e-15 recon=9.2e-16 purity=0.932 eig_purity=1.000 dz=1.28e-14 roll_short=5.8e-12 spec=2.0e-12
+[burgers p=0.05 full] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 1.636e-03  dyn 0.000e+00
+    step 300: recon 1.268e-03  dyn 0.000e+00
+    step 600: recon 1.265e-03  dyn 0.000e+00
+    step 900: recon 1.265e-03  dyn 0.000e+00
+    step 1200: recon 1.262e-03  dyn 0.000e+00
+    step 1500: recon 1.261e-03  dyn 0.000e+00
+    step 1800: recon 1.260e-03  dyn 0.000e+00
+    step 2100: recon 1.258e-03  dyn 0.000e+00
+    step 2400: recon 1.257e-03  dyn 0.000e+00
+    step 2700: recon 1.257e-03  dyn 0.000e+00
+    step 2999: recon 1.257e-03  dyn 0.000e+00
+[burgers p=0.05  full   trunk] Trel=3.51e-01 Trule=9.49e-02 Tsel=0.685 Arel=2.50e-01 span=2.9e-03 recon=4.0e-02 purity=0.723 eig_purity=0.998 dz=9.40e-02 roll_short=1.1e-02 spec=2.4e-03
+[burgers p=0.05  full   pod  ] Trel=3.49e-01 Trule=9.50e-02 Tsel=0.686 Arel=2.50e-01 span=3.1e-03 recon=4.0e-02 purity=0.971 eig_purity=0.998 dz=9.41e-02 roll_short=1.1e-02 spec=3.6e-03
+[burgers p=0.02 closed] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 3.886e-03  dyn 0.000e+00
+    step 300: recon 7.251e-07  dyn 0.000e+00
+    step 600: recon 3.647e-07  dyn 0.000e+00
+    step 900: recon 2.502e-07  dyn 0.000e+00
+    step 1200: recon 1.651e-07  dyn 0.000e+00
+    step 1500: recon 1.160e-07  dyn 0.000e+00
+    step 1800: recon 8.864e-08  dyn 0.000e+00
+    step 2100: recon 7.464e-08  dyn 0.000e+00
+    step 2400: recon 6.821e-08  dyn 0.000e+00
+    step 2700: recon 6.584e-08  dyn 0.000e+00
+    step 2999: recon 6.547e-08  dyn 0.000e+00
+[burgers p=0.02  closed trunk] Trel=1.49e-06 Trule=1.16e-06 Tsel=1.000 Arel=2.63e-07 span=1.0e-06 recon=2.7e-04 purity=0.801 eig_purity=1.000 dz=1.39e-14 roll_short=6.5e-12 spec=5.0e-12
+[burgers p=0.02  closed pod  ] Trel=1.62e-14 Trule=1.02e-14 Tsel=1.000 Arel=2.02e-14 span=1.3e-15 recon=1.3e-15 purity=0.810 eig_purity=1.000 dz=9.72e-15 roll_short=6.5e-12 spec=4.6e-12
+[burgers p=0.02 full] training trunk (beta=0.0, 3000 steps, cuda)
+    step 0: recon 8.843e-03  dyn 0.000e+00
+    step 300: recon 8.163e-03  dyn 0.000e+00
+    step 600: recon 8.146e-03  dyn 0.000e+00
+    step 900: recon 8.126e-03  dyn 0.000e+00
+    step 1200: recon 8.125e-03  dyn 0.000e+00
+    step 1500: recon 8.162e-03  dyn 0.000e+00
+    step 1800: recon 8.147e-03  dyn 0.000e+00
+    step 2100: recon 8.112e-03  dyn 0.000e+00
+    step 2400: recon 8.107e-03  dyn 0.000e+00
+    step 2700: recon 8.114e-03  dyn 0.000e+00
+    step 2999: recon 8.110e-03  dyn 0.000e+00
+[burgers p=0.02  full   trunk] Trel=4.47e-01 Trule=1.56e-01 Tsel=0.612 Arel=1.03e+00 span=9.6e-03 recon=9.7e-02 purity=0.731 eig_purity=0.992 dz=1.85e-01 roll_short=2.0e-02 spec=1.8e-02
+[burgers p=0.02  full   pod  ] Trel=4.41e-01 Trule=1.55e-01 Tsel=0.613 Arel=1.03e+00 span=1.0e-02 recon=9.7e-02 purity=0.959 eig_purity=0.991 dz=1.86e-01 roll_short=2.0e-02 spec=1.7e-02
+saved to runs/M6c_burgers_beta0

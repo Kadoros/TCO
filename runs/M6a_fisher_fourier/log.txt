@@ -1,0 +1,8 @@
+args: {"pde": "fisher", "basis": "fourier", "params": [0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": null, "save_every": null, "amp": null, "mean_amp": null, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "closure": "none", "label": null, "seed": 0, "quick": false, "out": "runs/M6a_fisher_fourier"}
+[fisher fourier+lstsq p=0.1   closed] Trel=4.20e-11 Trule=2.07e-11 Tsel=1.000 Arel=1.65e-12 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=6.78e-13 roll_short=5.3e-14 spec=1.7e-13 (sim 48.8s fit 0.9s)
+[fisher fourier+lstsq p=0.1   full  ] Trel=8.96e-03 Trule=1.72e-03 Tsel=0.988 Arel=2.71e-04 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=9.21e-05 roll_short=1.1e-05 spec=7.8e-07 (sim 66.1s fit 0.8s)
+[fisher fourier+lstsq p=0.05  closed] Trel=5.19e-11 Trule=3.54e-11 Tsel=1.000 Arel=3.87e-12 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=8.41e-13 roll_short=9.7e-14 spec=2.7e-13 (sim 37.6s fit 0.9s)
+[fisher fourier+lstsq p=0.05  full  ] Trel=2.26e-02 Trule=4.17e-03 Tsel=0.971 Arel=2.22e-03 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=3.17e-04 roll_short=3.7e-05 spec=4.0e-06 (sim 80.7s fit 1.5s)
+[fisher fourier+lstsq p=0.02  closed] Trel=5.53e-11 Trule=4.07e-11 Tsel=1.000 Arel=4.08e-12 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=1.16e-12 roll_short=4.9e-14 spec=3.5e-13 (sim 79.1s fit 1.0s)
+[fisher fourier+lstsq p=0.02  full  ] Trel=9.13e-02 Trule=1.61e-02 Tsel=0.892 Arel=1.56e-02 span=1.6e-15 purity=1.000 eig_purity=1.000 dz=1.85e-03 roll_short=1.9e-04 spec=9.2e-06 (sim 115.7s fit 1.3s)
+saved to runs/M6a_fisher_fourier

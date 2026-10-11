@@ -1,0 +1,9 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": true, "closure": "none", "mask_selection": true, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/V2f_mask_energy"}
+features per output: linear 17, quadratic 153, cubic 0
+sanity: energy-constraint residual of TRUE tensor = 0.00e+00
+[lstsq+energy+mask nu=0.5   full  ] relT=1.89e-03 rule=1.89e-03 sel=1.000 Adiag=1.12e-03 Eviol=1.3e-14 dz=1.80e-03 roll=3.11e-06 cons_res=8.9e-14 (sim 62.5s fit 0.7s)
+[lstsq+energy+mask nu=0.2   full  ] relT=8.79e-03 rule=8.79e-03 sel=1.000 Adiag=1.13e-02 Eviol=5.1e-14 dz=1.01e-02 roll=6.67e-05 cons_res=3.4e-13 (sim 64.7s fit 0.5s)
+[lstsq+energy+mask nu=0.1   full  ] relT=4.07e-02 rule=4.07e-02 sel=1.000 Adiag=5.54e-02 Eviol=5.7e-13 dz=3.29e-02 roll=1.02e-03 cons_res=3.7e-12 (sim 65.0s fit 0.5s)
+[lstsq+energy+mask nu=0.05  full  ] relT=1.02e-01 rule=1.02e-01 sel=1.000 Adiag=2.37e-01 Eviol=3.8e-12 dz=8.35e-02 roll=8.47e-03 cons_res=2.7e-11 (sim 64.9s fit 0.5s)
+[lstsq+energy+mask nu=0.02  full  ] relT=1.47e-01 rule=1.47e-01 sel=1.000 Adiag=1.02e+00 Eviol=2.2e-12 dz=1.65e-01 roll=4.25e-02 cons_res=4.0e-11 (sim 65.2s fit 0.5s)
+saved to runs/V2f_mask_energy

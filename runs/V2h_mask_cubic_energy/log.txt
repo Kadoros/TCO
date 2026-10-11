@@ -1,0 +1,9 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": true, "closure": "cubic", "mask_selection": true, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/V2h_mask_cubic_energy"}
+features per output: linear 17, quadratic 153, cubic 969
+sanity: energy-constraint residual of TRUE tensor = 0.00e+00
+[lstsq+energy+cubic+mask nu=0.5   full  ] relT=2.13e-03 rule=2.13e-03 sel=1.000 Adiag=3.55e-03 Eviol=1.7e-14 dz=1.47e-03 roll=3.55e-06 cubic/quad=5.43e-03 cons_res=1.7e-13 (sim 64.8s fit 7.4s)
+[lstsq+energy+cubic+mask nu=0.2   full  ] relT=5.17e-03 rule=5.17e-03 sel=1.000 Adiag=2.11e-02 Eviol=4.9e-14 dz=7.37e-03 roll=3.35e-05 cubic/quad=1.18e-02 cons_res=3.9e-13 (sim 65.7s fit 6.3s)
+[lstsq+energy+cubic+mask nu=0.1   full  ] relT=1.08e-02 rule=1.08e-02 sel=1.000 Adiag=7.75e-02 Eviol=1.4e-13 dz=2.13e-02 roll=3.71e-04 cubic/quad=3.06e-02 cons_res=9.0e-13 (sim 66.2s fit 6.3s)
+[lstsq+energy+cubic+mask nu=0.05  full  ] relT=3.44e-02 rule=3.44e-02 sel=1.000 Adiag=2.54e-01 Eviol=3.4e-13 dz=5.14e-02 roll=2.24e-03 cubic/quad=8.76e-02 cons_res=2.5e-12 (sim 66.2s fit 6.2s)
+[lstsq+energy+cubic+mask nu=0.02  full  ] relT=9.12e-02 rule=9.12e-02 sel=1.000 Adiag=1.16e+00 Eviol=1.0e-12 dz=1.11e-01 roll=1.45e-02 cubic/quad=1.60e-01 cons_res=1.2e-11 (sim 64.5s fit 5.9s)
+saved to runs/V2h_mask_cubic_energy

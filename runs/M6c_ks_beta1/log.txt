@@ -1,0 +1,86 @@
+args: {"pde": "ks", "params": [0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 12, "n_grid": 64, "kmax_full": 128, "n_traj": 200, "n_test": 40, "beta": 1.0, "steps": 3000, "lr": 0.002, "width": 64, "depth": 3, "ridge": 1e-08, "method": "lstsq", "seed": 0, "device": "cuda", "quick": false, "out": "runs/M6c_ks_beta1"}
+[ks p=0.1 closed] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 1.766e-07  dyn 6.922e-21
+    step 300: recon 4.810e-10  dyn 8.292e-21
+    step 600: recon 1.211e-10  dyn 2.240e-20
+    step 900: recon 7.717e-11  dyn 1.121e-20
+    step 1200: recon 5.452e-11  dyn 1.747e-20
+    step 1500: recon 4.190e-11  dyn 1.486e-20
+    step 1800: recon 3.483e-11  dyn 1.347e-20
+    step 2100: recon 3.101e-11  dyn 1.240e-20
+    step 2400: recon 2.913e-11  dyn 1.178e-20
+    step 2700: recon 2.844e-11  dyn 1.188e-20
+    step 2999: recon 2.834e-11  dyn 1.181e-20
+[ks p=0.1   closed trunk] Trel=1.88e-06 Trule=1.50e-06 Tsel=1.000 Arel=5.32e-07 span=1.2e-06 recon=5.4e-06 purity=0.668 eig_purity=0.979 dz=2.33e-12 roll_short=4.3e-06 spec=1.0e-04
+[ks p=0.1   closed pod  ] Trel=5.72e-10 Trule=1.13e-10 Tsel=1.000 Arel=3.73e-13 span=1.8e-15 recon=9.7e-16 purity=0.964 eig_purity=0.957 dz=6.53e-13 roll_short=4.3e-06 spec=1.1e-04
+[ks p=0.1 full] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 1.754e-07  dyn 2.112e-08
+    step 300: recon 1.369e-09  dyn 1.382e-08
+    step 600: recon 1.214e-09  dyn 1.381e-08
+    step 900: recon 1.171e-09  dyn 1.381e-08
+    step 1200: recon 1.150e-09  dyn 1.381e-08
+    step 1500: recon 1.138e-09  dyn 1.381e-08
+    step 1800: recon 1.132e-09  dyn 1.381e-08
+    step 2100: recon 1.129e-09  dyn 1.381e-08
+    step 2400: recon 1.128e-09  dyn 1.381e-08
+    step 2700: recon 1.127e-09  dyn 1.381e-08
+    step 2999: recon 1.127e-09  dyn 1.381e-08
+[ks p=0.1   full   trunk] Trel=8.72e-02 Trule=1.80e-02 Tsel=0.904 Arel=2.11e-05 span=1.3e-06 recon=3.4e-05 purity=0.681 eig_purity=1.000 dz=1.47e-04 roll_short=4.4e-06 spec=1.0e-04
+[ks p=0.1   full   pod  ] Trel=8.72e-02 Trule=1.80e-02 Tsel=0.904 Arel=2.10e-05 span=1.2e-07 recon=3.3e-05 purity=0.965 eig_purity=1.000 dz=1.47e-04 roll_short=4.4e-06 spec=1.1e-04
+[ks p=0.05 closed] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 2.634e-06  dyn 1.011e-20
+    step 300: recon 1.979e-09  dyn 1.212e-20
+    step 600: recon 7.779e-10  dyn 1.355e-20
+    step 900: recon 9.389e-10  dyn 1.465e-20
+    step 1200: recon 3.101e-10  dyn 1.351e-20
+    step 1500: recon 2.338e-10  dyn 1.253e-20
+    step 1800: recon 1.920e-10  dyn 1.206e-20
+    step 2100: recon 1.691e-10  dyn 1.211e-20
+    step 2400: recon 1.575e-10  dyn 1.214e-20
+    step 2700: recon 1.530e-10  dyn 1.234e-20
+    step 2999: recon 1.523e-10  dyn 1.228e-20
+[ks p=0.05  closed trunk] Trel=7.25e-07 Trule=5.77e-07 Tsel=1.000 Arel=1.95e-07 span=4.0e-07 recon=1.3e-05 purity=0.755 eig_purity=0.988 dz=1.17e-12 roll_short=2.2e-05 spec=2.6e-02
+[ks p=0.05  closed pod  ] Trel=6.60e-11 Trule=7.07e-12 Tsel=1.000 Arel=2.17e-12 span=1.9e-15 recon=1.1e-15 purity=0.971 eig_purity=0.984 dz=6.67e-13 roll_short=2.2e-05 spec=2.8e-02
+[ks p=0.05 full] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 5.634e-06  dyn 4.578e-05
+    step 300: recon 5.824e-06  dyn 4.056e-05
+    step 600: recon 5.815e-06  dyn 4.056e-05
+    step 900: recon 5.806e-06  dyn 4.057e-05
+    step 1200: recon 5.809e-06  dyn 4.056e-05
+    step 1500: recon 5.806e-06  dyn 4.057e-05
+    step 1800: recon 5.816e-06  dyn 4.055e-05
+    step 2100: recon 5.776e-06  dyn 4.061e-05
+    step 2400: recon 5.813e-06  dyn 4.056e-05
+    step 2700: recon 5.815e-06  dyn 4.055e-05
+    step 2999: recon 5.815e-06  dyn 4.055e-05
+[ks p=0.05  full   trunk] Trel=4.93e-01 Trule=1.15e-01 Tsel=0.695 Arel=3.41e-03 span=6.6e-02 recon=2.5e-03 purity=0.697 eig_purity=0.981 dz=6.89e-03 roll_short=4.7e-04 spec=8.2e-02
+[ks p=0.05  full   pod  ] Trel=3.29e-01 Trule=9.47e-02 Tsel=0.783 Arel=1.46e-03 span=4.2e-05 recon=1.9e-03 purity=0.983 eig_purity=1.000 dz=7.22e-03 roll_short=3.2e-04 spec=7.4e-02
+[ks p=0.02 closed] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 8.010e-04  dyn 1.048e-21
+    step 300: recon 4.885e-07  dyn 9.525e-22
+    step 600: recon 1.604e-07  dyn 8.539e-22
+    step 900: recon 9.774e-08  dyn 8.436e-22
+    step 1200: recon 6.882e-08  dyn 8.544e-22
+    step 1500: recon 5.365e-08  dyn 8.617e-22
+    step 1800: recon 4.545e-08  dyn 8.647e-22
+    step 2100: recon 4.091e-08  dyn 8.646e-22
+    step 2400: recon 3.854e-08  dyn 8.640e-22
+    step 2700: recon 3.759e-08  dyn 8.692e-22
+    step 2999: recon 3.743e-08  dyn 8.805e-22
+[ks p=0.02  closed trunk] Trel=5.82e-07 Trule=5.34e-07 Tsel=1.000 Arel=1.29e-07 span=3.5e-07 recon=1.9e-04 purity=0.738 eig_purity=0.999 dz=2.92e-13 roll_short=6.2e-04 spec=3.4e-01
+[ks p=0.02  closed pod  ] Trel=7.64e-13 Trule=7.61e-13 Tsel=1.000 Arel=1.69e-12 span=1.9e-15 recon=1.2e-15 purity=0.985 eig_purity=1.000 dz=2.67e-13 roll_short=6.2e-04 spec=4.6e-01
+[ks p=0.02 full] training trunk (beta=1.0, 3000 steps, cuda)
+    step 0: recon 2.988e-03  dyn 1.323e-02
+    step 300: recon 2.560e-03  dyn 1.241e-02
+    step 600: recon 2.560e-03  dyn 1.241e-02
+    step 900: recon 2.560e-03  dyn 1.241e-02
+    step 1200: recon 2.559e-03  dyn 1.241e-02
+    step 1500: recon 2.559e-03  dyn 1.241e-02
+    step 1800: recon 2.559e-03  dyn 1.241e-02
+    step 2100: recon 2.559e-03  dyn 1.241e-02
+    step 2400: recon 2.559e-03  dyn 1.241e-02
+    step 2700: recon 2.559e-03  dyn 1.241e-02
+    step 2999: recon 2.559e-03  dyn 1.241e-02
+[ks p=0.02  full   trunk] Trel=1.33e-01 Trule=1.28e-01 Tsel=0.925 Arel=1.20e-01 span=1.0e-04 recon=5.1e-02 purity=0.695 eig_purity=1.000 dz=1.16e-01 roll_short=3.4e-01 spec=4.1e-01
+[ks p=0.02  full   pod  ] Trel=1.33e-01 Trule=1.28e-01 Tsel=0.924 Arel=1.20e-01 span=1.8e-04 recon=5.1e-02 purity=0.935 eig_purity=1.000 dz=1.16e-01 roll_short=3.4e-01 spec=4.5e-01
+saved to runs/M6c_ks_beta1

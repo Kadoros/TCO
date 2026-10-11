@@ -1,0 +1,149 @@
+{
+  "args": {
+    "K": 8,
+    "kmax_full": 128,
+    "nus": [
+      0.5,
+      0.2,
+      0.1,
+      0.05,
+      0.02
+    ],
+    "regimes": [
+      "full"
+    ],
+    "n_traj": 200,
+    "n_test": 40,
+    "t_final": 2.0,
+    "dt": 0.001,
+    "save_every": 20,
+    "amp": 1.0,
+    "mean_amp": 0.5,
+    "kmax_ic": null,
+    "ridge": 1e-10,
+    "method": "lstsq",
+    "stlsq_thresh": 0.02,
+    "stlsq_iter": 8,
+    "energy_constraint": true,
+    "closure": "cubic",
+    "mask_selection": true,
+    "label": null,
+    "k_show": 3,
+    "seed": 0,
+    "quick": false,
+    "out": "runs/V2h_mask_cubic_energy"
+  },
+  "label": "lstsq+energy+cubic+mask",
+  "results": [
+    {
+      "nu": 0.5,
+      "regime": "full",
+      "label": "lstsq+energy+cubic+mask",
+      "metrics": {
+        "rel_err_T": 0.0021296803070858738,
+        "rel_err_T_on_rule": 0.0021296803070858707,
+        "selection_mass": 0.9999999996923961,
+        "max_off_rule_ratio": 1.1382781422714532e-10,
+        "rel_err_A_diag": 0.0035452320068939127,
+        "offdiag_A_ratio": 1.516080452252302e-12,
+        "n_nonzero_T": 112,
+        "n_nonzero_C": 621,
+        "energy_violation": 1.7315491106035647e-14,
+        "energy_constraint_residual": 1.7467204571804183e-13,
+        "cubic_to_quad_ratio": 0.005427025890198743,
+        "test_rel_err_dzdt": 0.0014657906164151717,
+        "rollout_rel_err_final": 3.5521879771083782e-06,
+        "time_sim_s": 64.8,
+        "time_fit_s": 7.4
+      }
+    },
+    {
+      "nu": 0.2,
+      "regime": "full",
+      "label": "lstsq+energy+cubic+mask",
+      "metrics": {
+        "rel_err_T": 0.005168027739382116,
+        "rel_err_T_on_rule": 0.005168027739382106,
+        "selection_mass": 0.9999999991710479,
+        "max_off_rule_ratio": 3.3619104296206376e-10,
+        "rel_err_A_diag": 0.02106113508751556,
+        "offdiag_A_ratio": 9.469328063224352e-12,
+        "n_nonzero_T": 112,
+        "n_nonzero_C": 621,
+        "energy_violation": 4.918097152515611e-14,
+        "energy_constraint_residual": 3.9093916138940534e-13,
+        "cubic_to_quad_ratio": 0.011765876091119684,
+        "test_rel_err_dzdt": 0.007369542070202539,
+        "rollout_rel_err_final": 3.348355829902185e-05,
+        "time_sim_s": 65.7,
+        "time_fit_s": 6.3
+      }
+    },
+    {
+      "nu": 0.1,
+      "regime": "full",
+      "label": "lstsq+energy+cubic+mask",
+      "metrics": {
+        "rel_err_T": 0.010822456818885858,
+        "rel_err_T_on_rule": 0.010822456818885837,
+        "selection_mass": 0.9999999982438589,
+        "max_off_rule_ratio": 6.990604386286395e-10,
+        "rel_err_A_diag": 0.07750220460429309,
+        "offdiag_A_ratio": 4.042244710822187e-11,
+        "n_nonzero_T": 112,
+        "n_nonzero_C": 621,
+        "energy_violation": 1.3624971031321202e-13,
+        "energy_constraint_residual": 9.046197175698838e-13,
+        "cubic_to_quad_ratio": 0.030647048404387617,
+        "test_rel_err_dzdt": 0.02134544464000247,
+        "rollout_rel_err_final": 0.0003706511277415794,
+        "time_sim_s": 66.2,
+        "time_fit_s": 6.3
+      }
+    },
+    {
+      "nu": 0.05,
+      "regime": "full",
+      "label": "lstsq+energy+cubic+mask",
+      "metrics": {
+        "rel_err_T": 0.034438791742593754,
+        "rel_err_T_on_rule": 0.03443879174259375,
+        "selection_mass": 0.9999999970913893,
+        "max_off_rule_ratio": 1.1977234488192772e-09,
+        "rel_err_A_diag": 0.25414514094724333,
+        "offdiag_A_ratio": 1.0452034806518639e-10,
+        "n_nonzero_T": 112,
+        "n_nonzero_C": 621,
+        "energy_violation": 3.4393791809814145e-13,
+        "energy_constraint_residual": 2.458748098366503e-12,
+        "cubic_to_quad_ratio": 0.0876055861613342,
+        "test_rel_err_dzdt": 0.05140536277460546,
+        "rollout_rel_err_final": 0.0022352902781929106,
+        "time_sim_s": 66.2,
+        "time_fit_s": 6.2
+      }
+    },
+    {
+      "nu": 0.02,
+      "regime": "full",
+      "label": "lstsq+energy+cubic+mask",
+      "metrics": {
+        "rel_err_T": 0.09122756834382534,
+        "rel_err_T_on_rule": 0.0912275683438253,
+        "selection_mass": 0.9999999961975071,
+        "max_off_rule_ratio": 1.1990689807184294e-09,
+        "rel_err_A_diag": 1.1635248884053933,
+        "offdiag_A_ratio": 1.945073583088071e-10,
+        "n_nonzero_T": 112,
+        "n_nonzero_C": 621,
+        "energy_violation": 1.0282289350065745e-12,
+        "energy_constraint_residual": 1.190705251586954e-11,
+        "cubic_to_quad_ratio": 0.1601946549104621,
+        "test_rel_err_dzdt": 0.11125761273407629,
+        "rollout_rel_err_final": 0.014499211847305666,
+        "time_sim_s": 64.5,
+        "time_fit_s": 5.9
+      }
+    }
+  ]
+}

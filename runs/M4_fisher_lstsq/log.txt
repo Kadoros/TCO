@@ -1,0 +1,9 @@
+args: {"pde": "fisher", "params": [0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 8, "Kv": 3, "eps": 0.5, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 0.3, "mean_amp": 0.0, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "none", "mask_selection": false, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M4_fisher_lstsq"}
+[fisher] features/output: lin 17, quad 153, cubic 0, input 0
+[fisher lstsq p=0.1   closed] Trel=4.05e-11 Trule=1.88e-11 Tsel=1.000 A_diag_rel_err=2.70e-13 dz=6.16e-13 roll=1.55e-13 closure=4.2e-16 nu_t_err=9.6e+02 (sim 39.0s fit 1.3s)
+[fisher lstsq p=0.1   full  ] Trel=9.45e-03 Trule=8.23e-04 Tsel=0.981 A_diag_rel_err=1.23e-04 dz=9.21e-05 roll=1.13e-06 closure=8.4e-05 nu_t_err=4.4e-01 (sim 78.3s fit 0.7s)
+[fisher lstsq p=0.05  closed] Trel=5.54e-11 Trule=4.08e-11 Tsel=1.000 A_diag_rel_err=5.83e-13 dz=8.38e-13 roll=2.31e-13 closure=4.3e-16 nu_t_err=2.1e+03 (sim 43.1s fit 0.8s)
+[fisher lstsq p=0.05  full  ] Trel=2.37e-02 Trule=2.26e-03 Tsel=0.955 A_diag_rel_err=1.84e-03 dz=3.17e-04 roll=1.13e-05 closure=2.8e-04 nu_t_err=4.8e-01 (sim 98.5s fit 1.1s)
+[fisher lstsq p=0.02  closed] Trel=5.57e-11 Trule=4.07e-11 Tsel=1.000 A_diag_rel_err=1.13e-12 dz=1.10e-12 roll=2.25e-13 closure=4.4e-16 nu_t_err=3.4e+03 (sim 58.2s fit 0.8s)
+[fisher lstsq p=0.02  full  ] Trel=9.44e-02 Trule=1.09e-02 Tsel=0.841 A_diag_rel_err=1.45e-02 dz=1.85e-03 roll=2.71e-04 closure=1.5e-03 nu_t_err=3.7e-01 (sim 74.0s fit 0.7s)
+saved to runs/M4_fisher_lstsq

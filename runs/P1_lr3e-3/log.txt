@@ -1,0 +1,66 @@
+args: {"regimes": ["closed", "full"], "models": ["tco", "deeponet"], "trunk": "learned", "K": 8, "n_grid": 64, "n_fine": 192, "n_inputs": 512, "n_test_inputs": 16, "n_ic": 4, "n_t": 8, "T_obs": 1.0, "amp": 1.0, "nu_range": [0.05, 0.25], "nu_modes": 2, "nu_amp": 0.2, "f_amp": 0.5, "trunk_steps": 5000, "steps": 20000, "lr": 0.003, "batch": 1024, "width": 256, "depth": 3, "seeds": [0], "device": "cuda", "quick": false, "out": "runs/P1_lr3e-3"}
+[closed] data: train (512, 32, 64), test (16, 32, 64), dt_save 0.125 (1.7s)
+    [trunk] step 0: span residual 1.792e-02
+    [trunk] step 1000: span residual 6.771e-07
+    [trunk] step 2000: span residual 1.031e-07
+    [trunk] step 3000: span residual 5.005e-08
+    [trunk] step 4000: span residual 3.879e-08
+    [trunk] step 4999: span residual 3.714e-08
+[closed] span residual (test)  basis: u 1.05e-04 u_t 3.01e-04 | pod: 1.43e-15 1.07e-15 | fourier: 1.05e-15 1.48e-15
+[closed] cond([1,c]) per training input: median 2.01e+02, max 3.37e+03
+[closed] extractor check on Galerkin generator: rel err 6.0e-11
+[closed] galerkin-on-basis reference: u_t err 3.81e-04 (in span 2.34e-04), rollout 6.61e-05
+    [closed tco s0] step 0: u_t loss 1.854e-01
+    [closed tco s0] step 4000: u_t loss 1.584e-04
+    [closed tco s0] step 8000: u_t loss 5.359e-05
+    [closed tco s0] step 12000: u_t loss 1.213e-05
+    [closed tco s0] step 16000: u_t loss 6.440e-07
+    [closed tco s0] step 19999: u_t loss 2.294e-07
+[closed tco      s0] u_t 2.30e-02 (in span 2.30e-02) roll 2.33e-02 | b 4.06e-02 A 1.49e-02 T 1.71e-02 | T_var 1.59e-02 (R2 nu 0.16) params 911707 (273.6s)
+    [closed deeponet s0] step 0: u_t loss 1.022e+00
+    [closed deeponet s0] step 4000: u_t loss 2.689e-03
+    [closed deeponet s0] step 8000: u_t loss 1.360e-03
+    [closed deeponet s0] step 12000: u_t loss 4.486e-04
+    [closed deeponet s0] step 16000: u_t loss 1.529e-04
+    [closed deeponet s0] step 19999: u_t loss 9.836e-05
+[closed deeponet s0] u_t 7.15e-02 (in span 7.15e-02) roll 2.07e-02 | b 3.88e-02 A 5.54e-02 T 2.30e-01 | T_var 2.16e-01 (R2 nu 0.19) params 185361 (84.2s)
+[full] data: train (512, 32, 64), test (16, 32, 64), dt_save 0.125 (56.2s)
+    [trunk] step 0: span residual 3.739e-02
+    [trunk] step 1000: span residual 3.382e-02
+    [trunk] step 2000: span residual 3.055e-02
+    [trunk] step 3000: span residual 3.100e-02
+    [trunk] step 4000: span residual 3.100e-02
+    [trunk] step 4999: span residual 3.030e-02
+[full] span residual (test)  basis: u 4.70e-02 u_t 3.65e-01 | pod: 4.71e-02 3.64e-01 | fourier: 4.70e-02 3.64e-01
+[full] cond([1,c]) per training input: median 1.95e+02, max 3.67e+03
+[full] extractor check on Galerkin generator: rel err 8.7e-11
+[full] galerkin-on-basis reference: u_t err 3.85e-01 (in span 1.34e-01), rollout 2.31e-02
+    [full tco s0] step 0: u_t loss 1.746e-01
+    [full tco s0] step 4000: u_t loss 1.238e-03
+    [full tco s0] step 8000: u_t loss 6.044e-04
+    [full tco s0] step 12000: u_t loss 1.758e-04
+    [full tco s0] step 16000: u_t loss 6.351e-05
+    [full tco s0] step 19999: u_t loss 3.901e-05
+[full tco      s0] u_t 4.04e-01 (in span 1.86e-01) roll 1.32e-01 | b 2.37e-01 A 1.99e-01 T 3.17e-01 | T_var 2.81e-01 (R2 nu 0.10) params 911707 (273.2s)
+    [full deeponet s0] step 0: u_t loss 1.026e+00
+    [full deeponet s0] step 4000: u_t loss 3.483e-03
+    [full deeponet s0] step 8000: u_t loss 2.302e-03
+    [full deeponet s0] step 12000: u_t loss 7.073e-04
+    [full deeponet s0] step 16000: u_t loss 3.264e-04
+    [full deeponet s0] step 19999: u_t loss 2.489e-04
+[full deeponet s0] u_t 3.87e-01 (in span 1.38e-01) roll 4.70e-02 | b 7.26e-02 A 1.41e-01 T 7.08e-01 | T_var 6.31e-01 (R2 nu 0.16) params 185361 (92.4s)
+| regime | model | u_t err | u_t err in span | rollout | b_rel | A_rel | T_rel | T_var | T_var R2(nu) | params |
+|---|---|---|---|---|---|---|---|---|---|---|
+| closed | tco | 2.30e-02 | 2.30e-02 | 2.33e-02 | 4.06e-02 | 1.49e-02 | 1.71e-02 | 1.59e-02 | 0.16 | 911707 |
+| closed | deeponet | 7.15e-02 | 7.15e-02 | 2.07e-02 | 3.88e-02 | 5.54e-02 | 2.30e-01 | 2.16e-01 | 0.19 | 185361 |
+| closed | galerkin (ref) | 3.81e-04 | 2.34e-04 | 6.61e-05 | 0 | 0 | 0 | 0 | - | - |
+| full | tco | 4.04e-01 | 1.86e-01 | 1.32e-01 | 2.37e-01 | 1.99e-01 | 3.17e-01 | 2.81e-01 | 0.10 | 911707 |
+| full | deeponet | 3.87e-01 | 1.38e-01 | 4.70e-02 | 7.26e-02 | 1.41e-01 | 7.08e-01 | 6.31e-01 | 0.16 | 185361 |
+| full | galerkin (ref) | 3.85e-01 | 1.34e-01 | 2.31e-02 | 0 | 0 | 0 | 0 | - | - |
+
+| regime | span u (basis) | span u_t (basis) | span u (POD) | span u_t (POD) | span u (Fourier) | span u_t (Fourier) | cond[1,c] median / max |
+|---|---|---|---|---|---|---|---|
+| closed | 1.05e-04 | 3.01e-04 | 1.43e-15 | 1.07e-15 | 1.05e-15 | 1.48e-15 | 2.0e+02 / 3.4e+03 |
+| full | 4.70e-02 | 3.65e-01 | 4.71e-02 | 3.64e-01 | 4.70e-02 | 3.64e-01 | 2.0e+02 / 3.7e+03 |
+
+saved to runs/P1_lr3e-3

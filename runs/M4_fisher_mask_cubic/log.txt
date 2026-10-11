@@ -1,0 +1,6 @@
+args: {"pde": "fisher", "params": [0.1, 0.05, 0.02], "regimes": ["full"], "K": 8, "Kv": 3, "eps": 0.5, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 0.3, "mean_amp": 0.0, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "cubic", "mask_selection": true, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M4_fisher_mask_cubic"}
+[fisher] features/output: lin 17, quad 153, cubic 969, input 0
+[fisher lstsq+cubic+mask p=0.1   full  ] Trel=1.32e-03 Trule=1.32e-03 Tsel=1.000 A_diag_rel_err=1.46e-04 dz=4.89e-05 roll=4.78e-07 closure=8.4e-05 nu_t_err=9.3e-02 cub/quad=3.1e-05 (sim 68.5s fit 13.0s)
+[fisher lstsq+cubic+mask p=0.05  full  ] Trel=1.86e-03 Trule=1.86e-03 Tsel=1.000 A_diag_rel_err=5.63e-04 dz=1.50e-04 roll=3.83e-06 closure=2.8e-04 nu_t_err=1.4e-01 cub/quad=8.6e-05 (sim 70.8s fit 15.9s)
+[fisher lstsq+cubic+mask p=0.02  full  ] Trel=7.91e-03 Trule=7.91e-03 Tsel=1.000 A_diag_rel_err=4.48e-03 dz=6.74e-04 roll=5.17e-05 closure=1.5e-03 nu_t_err=1.4e-01 cub/quad=1.0e-03 (sim 88.8s fit 17.9s)
+saved to runs/M4_fisher_mask_cubic

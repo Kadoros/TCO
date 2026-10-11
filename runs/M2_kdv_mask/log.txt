@@ -1,0 +1,7 @@
+args: {"pde": "kdv", "params": [0.1, 0.05, 0.02], "regimes": ["full"], "K": 8, "Kv": 3, "eps": 0.5, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.0005, "save_every": 40, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "none", "mask_selection": true, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M2_kdv_mask"}
+[kdv] features/output: lin 17, quad 153, cubic 0, input 0
+sanity: energy-constraint residual of TRUE T = 0.00e+00
+[kdv lstsq+mask p=0.1   full  ] Trel=9.44e-03 Trule=9.44e-03 Tsel=1.000 A_diag_rel_err=4.49e-03 dz=5.74e-03 roll=1.08e-02 closure=7.3e-03 nu_t_err=1.0e+00 (sim 148.0s fit 1.5s)
+[kdv lstsq+mask p=0.05  full  ] Trel=2.56e-02 Trule=2.56e-02 Tsel=1.000 A_diag_rel_err=1.67e-02 dz=2.22e-02 roll=2.55e-02 closure=2.8e-02 nu_t_err=1.3e-01 (sim 217.0s fit 0.8s)
+[kdv lstsq+mask p=0.02  full  ] Trel=6.91e-02 Trule=6.91e-02 Tsel=1.000 A_diag_rel_err=7.44e-02 dz=1.08e-01 roll=1.06e-01 closure=1.4e-01 nu_t_err=2.3e-01 (sim 153.8s fit 0.7s)
+saved to runs/M2_kdv_mask

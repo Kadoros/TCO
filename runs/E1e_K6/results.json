@@ -1,0 +1,48 @@
+{
+  "args": {
+    "K": 6,
+    "kmax_full": 128,
+    "nus": [
+      0.1
+    ],
+    "regimes": [
+      "full"
+    ],
+    "n_traj": 200,
+    "n_test": 40,
+    "t_final": 2.0,
+    "dt": 0.001,
+    "save_every": 20,
+    "amp": 1.0,
+    "mean_amp": 0.5,
+    "kmax_ic": 6,
+    "ridge": 1e-10,
+    "method": "lstsq",
+    "stlsq_thresh": 0.02,
+    "stlsq_iter": 5,
+    "noise": 0.0,
+    "k_show": 3,
+    "seed": 0,
+    "quick": false,
+    "out": "runs/E1e_K6"
+  },
+  "results": [
+    {
+      "nu": 0.1,
+      "regime": "full",
+      "metrics": {
+        "rel_err_T": 0.21357629834660594,
+        "rel_err_A_diag": 0.11025326530705491,
+        "offdiag_A_ratio": 0.011520986231426453,
+        "rel_err_T_on_rule": 0.045707943511376574,
+        "selection_mass": 0.7398134209815783,
+        "max_off_rule_ratio": 0.34678891063838585,
+        "energy_violation": 0.0022779572005997644,
+        "test_rel_err_dzdt": 0.053871782962274635,
+        "rollout_rel_err_final": 0.003099447055915058,
+        "n_samples": 20200,
+        "n_features": 104
+      }
+    }
+  ]
+}

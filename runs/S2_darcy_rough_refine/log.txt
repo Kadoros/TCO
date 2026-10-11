@@ -1,0 +1,24 @@
+args: {"K": 6, "Ka": 3, "Kf": 12, "fK": 6, "sigmas": [0.3, 0.6, 1.0], "sigma_ood_factor": 1.5, "tau": 2.0, "alpha": 2.0, "N": 64, "regimes": ["full"], "n_train": 400, "n_test": 50, "refine_steps": 3000, "refine_lr": 0.003, "device": null, "seed": 0, "quick": false, "out": "runs/S2_darcy_rough_refine"}
+u modes 168, a modes 49, features/output <= 48 (dense would need 8232)
+    refine step 0: train solution error^2 = 4.332e-05
+    refine step 600: train solution error^2 = 4.025e-05
+    refine step 1200: train solution error^2 = 3.897e-05
+    refine step 1800: train solution error^2 = 3.821e-05
+    refine step 2400: train solution error^2 = 3.774e-05
+    refine step 2999: train solution error^2 = 3.740e-05
+[Darcy sigma=0.3  full  ] Lrel=2.75e+00 L(|k|<=K/2)=3.2e-01 u_test: learned=6.32e-03 naive=6.00e-03 | u_OOD(sigma x1.5): learned=1.07e-02 naive=1.00e-02 (31.0s + 154.5s)
+    refine step 0: train solution error^2 = 2.799e-04
+    refine step 600: train solution error^2 = 2.299e-04
+    refine step 1200: train solution error^2 = 2.072e-04
+    refine step 1800: train solution error^2 = 1.932e-04
+    refine step 2400: train solution error^2 = 1.837e-04
+    refine step 2999: train solution error^2 = 1.768e-04
+[Darcy sigma=0.6  full  ] Lrel=1.82e+00 L(|k|<=K/2)=2.6e-01 u_test: learned=1.36e-02 naive=1.27e-02 | u_OOD(sigma x1.5): learned=2.35e-02 naive=2.24e-02 (25.0s + 120.4s)
+    refine step 0: train solution error^2 = 1.657e-03
+    refine step 600: train solution error^2 = 1.027e-03
+    refine step 1200: train solution error^2 = 8.305e-04
+    refine step 1800: train solution error^2 = 7.304e-04
+    refine step 2400: train solution error^2 = 6.688e-04
+    refine step 2999: train solution error^2 = 6.267e-04
+[Darcy sigma=1.0  full  ] Lrel=1.25e+00 L(|k|<=K/2)=2.5e-01 u_test: learned=2.53e-02 naive=2.34e-02 | u_OOD(sigma x1.5): learned=4.59e-02 naive=4.46e-02 (29.2s + 122.7s)
+saved to runs/S2_darcy_rough_refine

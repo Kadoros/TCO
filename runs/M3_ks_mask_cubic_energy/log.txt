@@ -1,0 +1,7 @@
+args: {"pde": "ks", "params": [0.1, 0.05, 0.02], "regimes": ["full"], "K": 12, "Kv": 3, "eps": 0.5, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 5.0, "dt": 0.001, "save_every": 50, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": true, "closure": "cubic", "mask_selection": true, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M3_ks_mask_cubic_energy"}
+[ks] features/output: lin 25, quad 325, cubic 2925, input 0
+sanity: energy-constraint residual of TRUE T = 0.00e+00
+[ks lstsq+energy+cubic+mask p=0.1   full  ] Trel=1.56e-04 Trule=1.56e-04 Tsel=1.000 A_diag_rel_err=3.41e-07 dz=1.22e-06 roll=2.51e-04 closure=3.0e-04 nu_t_err=1.1e-03 cub/quad=1.4e-04 (sim 194.8s fit 173.3s)
+[ks lstsq+energy+cubic+mask p=0.05  full  ] Trel=2.66e-03 Trule=2.66e-03 Tsel=1.000 A_diag_rel_err=1.28e-05 dz=2.42e-05 roll=2.01e-01 closure=1.8e-02 nu_t_err=2.2e-05 cub/quad=4.9e-03 (sim 179.9s fit 110.5s)
+[ks lstsq+energy+cubic+mask p=0.02  full  ] Trel=5.26e-02 Trule=5.26e-02 Tsel=1.000 A_diag_rel_err=8.21e-03 dz=6.03e-03 roll=1.40e+00 closure=2.6e-01 nu_t_err=2.7e-04 cub/quad=9.3e-02 (sim 151.5s fit 84.5s)
+saved to runs/M3_ks_mask_cubic_energy

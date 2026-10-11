@@ -1,0 +1,40 @@
+M6a_datasize_25 rc=0 wall=13s maxRSS_kB=128976
+M6a_datasize_50 rc=0 wall=29s maxRSS_kB=134748
+M6a_datasize_100 rc=0 wall=31s maxRSS_kB=184048
+M6a_datasize_200 rc=0 wall=52s maxRSS_kB=274804
+S2_darcy_rough rc=0 wall=72s maxRSS_kB=152972
+S2_darcy_smooth rc=0 wall=74s maxRSS_kB=149996
+M6a_datasize_400 rc=0 wall=78s maxRSS_kB=472932
+S2_ns_K4_mask rc=0 wall=147s maxRSS_kB=923684
+S2_ns_K6_mask rc=0 wall=172s maxRSS_kB=899680
+M6a_fisher_fourier rc=0 wall=435s maxRSS_kB=330200
+M6a_fisher_pod rc=0 wall=448s maxRSS_kB=397144
+S2_ns_K8_mask rc=0 wall=276s maxRSS_kB=950524
+S2_darcy_rough_refine rc=0 wall=484s maxRSS_kB=1293220
+M3b_ks_lstsq rc=0 wall=754s maxRSS_kB=504632
+M6a_burgers_fourier rc=0 wall=761s maxRSS_kB=340008
+M6a_burgers_pod rc=0 wall=785s maxRSS_kB=409492
+M6a_burgers_pod_stlsq rc=0 wall=805s maxRSS_kB=409192
+S2_ac_mask rc=0 wall=884s maxRSS_kB=1792948
+S2_ac_nomask rc=0 wall=900s maxRSS_kB=1792152
+S2_ac_mask_amp03 rc=0 wall=910s maxRSS_kB=1792104
+M6a_kdv_fourier rc=0 wall=915s maxRSS_kB=339108
+M6a_kdv_pod rc=0 wall=965s maxRSS_kB=397052
+M6c_burgers_beta1 rc=143 wall=770s maxRSS_kB=
+M6c_burgers_beta10 rc=143 wall=770s maxRSS_kB=
+M6c_kdv_beta1 rc=143 wall=770s maxRSS_kB=
+M6c_ks_beta1 rc=143 wall=770s maxRSS_kB=
+# above 4x rc=143: killed intentionally for GPU redistribution; restarted below
+M3b_ks_mask_cubic rc=0 wall=1051s maxRSS_kB=12247060
+M6a_ks_fourier rc=0 wall=1126s maxRSS_kB=494120
+M6a_ks_pod rc=0 wall=1133s maxRSS_kB=583520
+M6a_ks_pod_stlsq rc=0 wall=1149s maxRSS_kB=582572
+ALLDONE batch1
+M6c_burgers_beta0 rc=0 wall=1044s maxRSS_kB=1199192
+M6c_kdv_beta1 rc=0 wall=1252s maxRSS_kB=1418852
+M6c_burgers_beta10 rc=0 wall=1610s maxRSS_kB=1432220
+M6c_burgers_beta1 rc=0 wall=1641s maxRSS_kB=1421304
+M6c_ks_beta1 rc=0 wall=2191s maxRSS_kB=1603788
+ALLDONE batch3
+S2_ns_K4_dense rc=0 wall=5616s maxRSS_kB=2298952
+ALLDONE batch2

@@ -1,0 +1,12 @@
+P1_n128 gpu=2 rc=0 wall=1505s maxRSS_kB=1191880
+P1_n2048 gpu=1 rc=0 wall=1816s maxRSS_kB=2889256
+P1_main gpu=0 rc=0 wall=2253s maxRSS_kB=1609156
+P1_lr3e-4 gpu=2 rc=0 wall=824s maxRSS_kB=1277504
+P1_fourier gpu=1 rc=0 wall=803s maxRSS_kB=1563092
+QUEUEDONE gpu=1
+P1_pod gpu=0 rc=0 wall=784s maxRSS_kB=1563612
+QUEUEDONE gpu=0
+P1_lr3e-3 gpu=2 rc=0 wall=830s maxRSS_kB=1275136
+QUEUEDONE gpu=2
+P1_n2048_joint gpu=1 rc=0 wall=870s maxRSS_kB=2089708
+P1_main_joint gpu=0 rc=0 wall=873s maxRSS_kB=1266968

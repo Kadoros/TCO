@@ -1,0 +1,4 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.1], "regimes": ["closed", "full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": 2, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 5, "noise": 0.0, "k_show": 3, "seed": 0, "quick": false, "out": "runs/E1b_kic2"}
+[nu=0.1   closed] relT=7.45e-12 relT_rule=2.94e-12 sel=1.000 offRule=9.37e-12 Ediag=3.19e-13 Eviol=1.98e-14 test_dz=3.71e-14 rollout=5.41e-13  (38.2s)
+[nu=0.1   full  ] relT=2.90e+00 relT_rule=1.93e-01 sel=0.217 offRule=4.43e+00 Ediag=1.93e-01 Eviol=8.27e-04 test_dz=1.32e-02 rollout=5.59e-04  (63.6s)
+saved to runs/E1b_kic2

@@ -1,0 +1,7 @@
+args: {"K": 6, "Ka": 3, "Kf": 9, "fK": 6, "sigmas": [0.3, 0.6], "sigma_ood_factor": 1.5, "tau": 3.0, "alpha": 3.0, "N": 64, "regimes": ["closed", "full"], "n_train": 120, "n_test": 15, "refine_steps": 0, "refine_lr": 0.001, "device": null, "seed": 0, "quick": true, "out": "runs/S2_smoke_darcy"}
+u modes 168, a modes 49, features/output <= 48 (dense would need 8232)
+[Darcy sigma=0.3  closed] Lrel=1.04e-13 L(|k|<=K/2)=1.2e-13 u_test: learned=1.86e-15 naive=0.00e+00 | u_OOD(sigma x1.5): learned=3.22e-15 naive=0.00e+00 (0.4s + 0.3s)
+[Darcy sigma=0.3  full  ] Lrel=4.97e+00 L(|k|<=K/2)=5.9e-01 u_test: learned=7.69e-03 naive=6.00e-03 | u_OOD(sigma x1.5): learned=1.59e-02 naive=1.07e-02 (1.0s + 0.5s)
+[Darcy sigma=0.6  closed] Lrel=5.54e-14 L(|k|<=K/2)=4.7e-14 u_test: learned=1.99e-15 naive=0.00e+00 | u_OOD(sigma x1.5): learned=4.71e-15 naive=0.00e+00 (0.4s + 0.3s)
+[Darcy sigma=0.6  full  ] Lrel=3.25e+00 L(|k|<=K/2)=6.8e-01 u_test: learned=1.91e-02 naive=1.26e-02 | u_OOD(sigma x1.5): learned=4.33e-02 naive=2.39e-02 (1.0s + 0.5s)
+saved to runs/S2_smoke_darcy

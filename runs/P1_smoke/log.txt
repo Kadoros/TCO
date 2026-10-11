@@ -1,0 +1,72 @@
+args: {"regimes": ["closed", "full"], "models": ["tco", "deeponet", "opinf"], "trunk": "learned", "K": 8, "n_grid": 64, "n_fine": 192, "n_inputs": 32, "n_test_inputs": 6, "n_ic": 8, "n_t": 8, "T_obs": 1.0, "amp": 1.0, "nu_range": [0.05, 0.25], "nu_modes": 2, "nu_amp": 0.2, "f_amp": 0.5, "trunk_steps": 200, "steps": 300, "lr": 0.001, "batch": 1024, "width": 256, "depth": 3, "seeds": [0], "device": "cuda", "quick": true, "out": "runs/P1_smoke"}
+[closed] data: train (32, 64, 64), test (6, 64, 64), dt_save 0.125 (0.2s)
+    [trunk] step 0: span residual 1.753e-02
+    [trunk] step 40: span residual 1.384e-05
+    [trunk] step 80: span residual 6.775e-06
+    [trunk] step 120: span residual 5.291e-06
+    [trunk] step 160: span residual 5.037e-06
+    [trunk] step 199: span residual 5.097e-06
+[closed] span residual (test)  basis: u 1.08e-03 u_t 4.14e-03 | pod: 1.90e-15 1.41e-15 | fourier: 1.07e-15 1.50e-15
+[closed] cond([1,c]) per training input: median 1.69e+01, max 3.09e+01
+[closed] extractor check on Galerkin generator: rel err 7.5e-11
+[closed] galerkin-on-basis reference: u_t err 5.17e-03 (in span 3.09e-03), rollout 5.74e-04
+    [closed tco s0] step 0: u_t loss 1.207e-01
+    [closed tco s0] step 60: u_t loss 5.878e-03
+    [closed tco s0] step 120: u_t loss 1.041e-03
+    [closed tco s0] step 180: u_t loss 4.846e-04
+    [closed tco s0] step 240: u_t loss 3.590e-04
+    [closed tco s0] step 299: u_t loss 3.359e-04
+[closed tco      s0] u_t 3.29e-01 (in span 3.29e-01) roll 3.24e-01 | b 6.42e-01 A 1.72e-01 T 6.27e-01 | T_var 2.59e-01 (R2 nu 0.50) params 911707 (4.5s)
+    [closed deeponet s0] step 0: u_t loss 1.007e+00
+    [closed deeponet s0] step 60: u_t loss 6.178e-01
+    [closed deeponet s0] step 120: u_t loss 2.519e-01
+    [closed deeponet s0] step 180: u_t loss 1.481e-01
+    [closed deeponet s0] step 240: u_t loss 1.506e-01
+    [closed deeponet s0] step 299: u_t loss 1.260e-01
+[closed deeponet s0] u_t 6.08e-01 (in span 6.08e-01) roll 3.28e-01 | b 7.45e-01 A 7.31e-01 T 8.21e-01 | T_var 4.50e-01 (R2 nu 0.41) params 185361 (1.5s)
+    [closed opinf] least squares with 1043 features per output, 2048 samples
+[closed opinf    s0] u_t 4.14e-03 (in span 1.32e-14) roll 4.06e-04 | b 3.81e-11 A 9.27e-04 T 7.74e-03 | T_var 2.93e-11 (R2 nu 0.28) params 17731 (0.4s)
+[full] data: train (32, 64, 64), test (6, 64, 64), dt_save 0.125 (6.5s)
+    [trunk] step 0: span residual 4.231e-02
+    [trunk] step 40: span residual 3.507e-02
+    [trunk] step 80: span residual 3.465e-02
+    [trunk] step 120: span residual 3.345e-02
+    [trunk] step 160: span residual 3.418e-02
+    [trunk] step 199: span residual 3.620e-02
+[full] span residual (test)  basis: u 4.48e-02 u_t 3.54e-01 | pod: 4.52e-02 3.54e-01 | fourier: 4.45e-02 3.53e-01
+[full] cond([1,c]) per training input: median 1.73e+01, max 3.43e+01
+[full] extractor check on Galerkin generator: rel err 8.5e-11
+[full] galerkin-on-basis reference: u_t err 3.68e-01 (in span 1.10e-01), rollout 2.69e-02
+    [full tco s0] step 0: u_t loss 1.143e-01
+    [full tco s0] step 60: u_t loss 7.130e-03
+    [full tco s0] step 120: u_t loss 1.871e-03
+    [full tco s0] step 180: u_t loss 1.157e-03
+    [full tco s0] step 240: u_t loss 8.922e-04
+    [full tco s0] step 299: u_t loss 7.607e-04
+[full tco      s0] u_t 4.83e-01 (in span 3.52e-01) roll 3.22e-01 | b 6.51e-01 A 1.63e-01 T 7.44e-01 | T_var 2.68e-01 (R2 nu 0.47) params 911707 (4.5s)
+    [full deeponet s0] step 0: u_t loss 1.015e+00
+    [full deeponet s0] step 60: u_t loss 5.892e-01
+    [full deeponet s0] step 120: u_t loss 2.441e-01
+    [full deeponet s0] step 180: u_t loss 1.561e-01
+    [full deeponet s0] step 240: u_t loss 1.436e-01
+    [full deeponet s0] step 299: u_t loss 1.294e-01
+[full deeponet s0] u_t 6.65e-01 (in span 6.01e-01) roll 3.09e-01 | b 7.89e-01 A 6.47e-01 T 8.84e-01 | T_var 4.63e-01 (R2 nu 0.42) params 185361 (1.6s)
+    [full opinf] least squares with 1043 features per output, 2048 samples
+[full opinf    s0] u_t 6.00e-01 (in span 5.19e-01) roll 6.29e-02 | b 2.65e-01 A 1.70e-01 T 1.81e+00 | T_var 9.36e-01 (R2 nu 0.52) params 17731 (0.4s)
+| regime | model | u_t err | u_t err in span | rollout | b_rel | A_rel | T_rel | T_var | T_var R2(nu) | params |
+|---|---|---|---|---|---|---|---|---|---|---|
+| closed | tco | 3.29e-01 | 3.29e-01 | 3.24e-01 | 6.42e-01 | 1.72e-01 | 6.27e-01 | 2.59e-01 | 0.50 | 911707 |
+| closed | deeponet | 6.08e-01 | 6.08e-01 | 3.28e-01 | 7.45e-01 | 7.31e-01 | 8.21e-01 | 4.50e-01 | 0.41 | 185361 |
+| closed | opinf | 4.14e-03 | 1.32e-14 | 4.06e-04 | 3.81e-11 | 9.27e-04 | 7.74e-03 | 2.93e-11 | 0.28 | 17731 |
+| closed | galerkin (ref) | 5.17e-03 | 3.09e-03 | 5.74e-04 | 0 | 0 | 0 | 0 | - | - |
+| full | tco | 4.83e-01 | 3.52e-01 | 3.22e-01 | 6.51e-01 | 1.63e-01 | 7.44e-01 | 2.68e-01 | 0.47 | 911707 |
+| full | deeponet | 6.65e-01 | 6.01e-01 | 3.09e-01 | 7.89e-01 | 6.47e-01 | 8.84e-01 | 4.63e-01 | 0.42 | 185361 |
+| full | opinf | 6.00e-01 | 5.19e-01 | 6.29e-02 | 2.65e-01 | 1.70e-01 | 1.81e+00 | 9.36e-01 | 0.52 | 17731 |
+| full | galerkin (ref) | 3.68e-01 | 1.10e-01 | 2.69e-02 | 0 | 0 | 0 | 0 | - | - |
+
+| regime | span u (basis) | span u_t (basis) | span u (POD) | span u_t (POD) | span u (Fourier) | span u_t (Fourier) | cond[1,c] median / max |
+|---|---|---|---|---|---|---|---|
+| closed | 1.08e-03 | 4.14e-03 | 1.90e-15 | 1.41e-15 | 1.07e-15 | 1.50e-15 | 1.7e+01 / 3.1e+01 |
+| full | 4.48e-02 | 3.54e-01 | 4.52e-02 | 3.54e-01 | 4.45e-02 | 3.53e-01 | 1.7e+01 / 3.4e+01 |
+
+saved to runs/P1_smoke

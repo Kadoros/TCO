@@ -1,0 +1,3 @@
+args: {"pde": "burgers", "basis": "pod", "params": [0.2], "regimes": ["closed"], "K": 8, "n_grid": 64, "kmax_full": 128, "n_traj": 25, "n_test": 40, "t_final": 2.0, "dt": null, "save_every": null, "amp": null, "mean_amp": null, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "closure": "none", "label": null, "seed": 0, "quick": false, "out": "runs/M6a_datasize_25"}
+[burgers pod+lstsq p=0.2   closed] Trel=1.32e-08 Trule=3.06e-09 Tsel=1.000 Arel=8.84e-10 span=1.3e-15 purity=0.777 eig_purity=1.000 dz=1.37e-09 roll_short=1.7e-10 spec=1.0e-10 (sim 11.0s fit 0.7s)
+saved to runs/M6a_datasize_25

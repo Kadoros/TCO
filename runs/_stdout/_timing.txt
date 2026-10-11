@@ -1,0 +1,16 @@
+E1c_noise1e-2 rc=0 wall=38s
+E1c_noise1e-4 rc=0 wall=39s
+E1c_noise1e-3 rc=0 wall=39s
+E1c_noise0 rc=0 wall=39s
+E1e_K6 rc=0 wall=68s
+E1e_K12 rc=0 wall=69s
+E1d_ridge1e-10 rc=0 wall=70s
+E1e_K8 rc=0 wall=70s
+E1d_ridge1e-6 rc=0 wall=72s
+E1d_ridge1e-3 rc=0 wall=74s
+E1b_kic4 rc=0 wall=100s
+E1b_kic8 rc=0 wall=102s
+E1b_kic2 rc=0 wall=103s
+E1a_nu_sweep rc=0 wall=468s
+E1f_stlsq rc=0 wall=468s
+ALLDONE

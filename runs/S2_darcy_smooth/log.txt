@@ -1,0 +1,9 @@
+args: {"K": 6, "Ka": 3, "Kf": 12, "fK": 6, "sigmas": [0.3, 0.6, 1.0], "sigma_ood_factor": 1.5, "tau": 3.0, "alpha": 3.0, "N": 64, "regimes": ["closed", "full"], "n_train": 400, "n_test": 50, "refine_steps": 0, "refine_lr": 0.001, "device": null, "seed": 0, "quick": false, "out": "runs/S2_darcy_smooth"}
+u modes 168, a modes 49, features/output <= 48 (dense would need 8232)
+[Darcy sigma=0.3  closed] Lrel=9.41e-14 L(|k|<=K/2)=1.2e-13 u_test: learned=1.86e-15 naive=0.00e+00 | u_OOD(sigma x1.5): learned=3.07e-15 naive=0.00e+00 (1.8s + 1.0s)
+[Darcy sigma=0.3  full  ] Lrel=2.48e+00 L(|k|<=K/2)=3.2e-01 u_test: learned=6.73e-03 naive=5.96e-03 | u_OOD(sigma x1.5): learned=1.07e-02 naive=9.85e-03 (17.5s + 4.7s)
+[Darcy sigma=0.6  closed] Lrel=5.45e-14 L(|k|<=K/2)=4.2e-14 u_test: learned=1.70e-15 naive=0.00e+00 | u_OOD(sigma x1.5): learned=3.23e-15 naive=0.00e+00 (1.5s + 1.0s)
+[Darcy sigma=0.6  full  ] Lrel=1.74e+00 L(|k|<=K/2)=2.5e-01 u_test: learned=1.66e-02 naive=1.27e-02 | u_OOD(sigma x1.5): learned=2.59e-02 naive=2.16e-02 (16.5s + 4.5s)
+[Darcy sigma=1.0  closed] Lrel=2.58e-14 L(|k|<=K/2)=1.9e-14 u_test: learned=1.83e-15 naive=0.00e+00 | u_OOD(sigma x1.5): learned=3.55e-15 naive=0.00e+00 (1.5s + 0.9s)
+[Darcy sigma=1.0  full  ] Lrel=1.24e+00 L(|k|<=K/2)=2.2e-01 u_test: learned=3.79e-02 naive=2.33e-02 | u_OOD(sigma x1.5): learned=6.47e-02 naive=4.56e-02 (16.9s + 5.8s)
+saved to runs/S2_darcy_smooth

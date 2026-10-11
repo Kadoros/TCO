@@ -1,0 +1,9 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "cubic", "mask_selection": false, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/V2d_cubic"}
+features per output: linear 17, quadratic 153, cubic 969
+sanity: energy-constraint residual of TRUE tensor = 0.00e+00
+[lstsq+cubic nu=0.5   full  ] relT=3.03e-01 rule=2.43e-02 sel=0.597 Adiag=8.98e-03 Eviol=5.9e-05 dz=2.37e-02 roll=7.59e-05 cubic/quad=7.48e-02 (sim 61.8s fit 5.7s)
+[lstsq+cubic nu=0.2   full  ] relT=4.30e-01 rule=5.42e-02 sel=0.530 Adiag=4.79e-02 Eviol=2.2e-04 dz=4.92e-02 roll=1.68e-04 cubic/quad=8.38e-02 (sim 63.5s fit 5.3s)
+[lstsq+cubic nu=0.1   full  ] relT=5.39e-01 rule=1.10e-01 sel=0.484 Adiag=1.37e-01 Eviol=1.0e-03 dz=1.06e-01 roll=9.63e-04 cubic/quad=1.23e-01 (sim 64.3s fit 5.3s)
+[lstsq+cubic nu=0.05  full  ] relT=7.65e-01 rule=1.85e-01 sel=0.404 Adiag=3.84e-01 Eviol=4.4e-03 dz=2.31e-01 roll=1.22e-02 cubic/quad=2.34e-01 (sim 63.9s fit 5.3s)
+[lstsq+cubic nu=0.02  full  ] relT=9.37e-01 rule=2.53e-01 sel=0.332 Adiag=1.53e+00 Eviol=1.2e-02 dz=3.86e-01 roll=2.13e-01 cubic/quad=3.93e-01 (sim 63.4s fit 5.0s)
+saved to runs/V2d_cubic

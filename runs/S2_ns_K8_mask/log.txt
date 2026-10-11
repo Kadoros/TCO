@@ -1,0 +1,9 @@
+args: {"K": 8, "nus": [0.02, 0.01, 0.005], "alpha": 0.1, "F": 1.0, "nf": 4, "regimes": ["closed", "full"], "N_full": 64, "n_traj": 64, "n_test": 8, "t_spin": 10.0, "t_rec": 5.0, "dt": 0.01, "save_every": 10, "amp": 2.0, "dense": false, "seed": 0, "device": "cuda", "quick": false, "out": "runs/S2_ns_K8_mask"}
+modes n=288; features/output: masked ~42 (dense would need 41905); device=cuda
+[NS mask nu=0.02   closed] Trel=7.14e-12 Trule=7.14e-12 Tsel=1.000 T(|k|<=K/2)=1.9e-14 Adiag=2.38e-15 forcing=4.8e-15 dz=2.13e-14 closure=2.0e-15 nu_t_err=4.5e+00 roll_short=1.2e-15 spec=1.9e-15 (sim 10.5s fit 41.6s)
+[NS mask nu=0.02   full  ] Trel=5.68e+00 Trule=5.68e+00 Tsel=1.000 T(|k|<=K/2)=1.1e-03 Adiag=2.23e-01 forcing=8.3e-04 dz=3.70e-02 closure=1.0e-01 nu_t_err=1.6e-02 roll_short=8.3e-04 spec=6.7e-05 (sim 12.2s fit 39.7s)
+[NS mask nu=0.01   closed] Trel=2.52e-14 Trule=2.52e-14 Tsel=1.000 T(|k|<=K/2)=4.7e-15 Adiag=1.59e-15 forcing=1.8e-15 dz=7.70e-15 closure=1.1e-15 nu_t_err=9.1e+00 roll_short=6.9e-16 spec=8.9e-16 (sim 10.9s fit 35.8s)
+[NS mask nu=0.01   full  ] Trel=5.58e-01 Trule=5.58e-01 Tsel=1.000 T(|k|<=K/2)=3.8e-03 Adiag=2.40e-01 forcing=4.9e-03 dz=1.86e-01 closure=3.1e-01 nu_t_err=3.4e-02 roll_short=7.6e-03 spec=4.3e-03 (sim 8.4s fit 36.1s)
+[NS mask nu=0.005  closed] Trel=6.13e-15 Trule=6.13e-15 Tsel=1.000 T(|k|<=K/2)=2.2e-15 Adiag=1.89e-15 forcing=1.1e-15 dz=4.60e-15 closure=8.0e-16 nu_t_err=1.6e+01 roll_short=9.5e-16 spec=7.5e-16 (sim 9.7s fit 29.4s)
+[NS mask nu=0.005  full  ] Trel=3.89e-01 Trule=3.89e-01 Tsel=1.000 T(|k|<=K/2)=6.2e-03 Adiag=3.98e-01 forcing=1.6e-02 dz=2.97e-01 closure=3.9e-01 nu_t_err=4.5e-02 roll_short=2.6e-02 spec=1.5e-02 (sim 7.5s fit 24.4s)
+saved to runs/S2_ns_K8_mask

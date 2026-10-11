@@ -1,0 +1,8 @@
+args: {"pde": "fisher", "basis": "pod", "params": [0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": null, "save_every": null, "amp": null, "mean_amp": null, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "closure": "none", "label": null, "seed": 0, "quick": false, "out": "runs/M6a_fisher_pod"}
+[fisher pod+lstsq p=0.1   closed] Trel=4.38e-11 Trule=2.23e-11 Tsel=1.000 Arel=1.40e-12 span=1.2e-15 purity=0.963 eig_purity=1.000 dz=6.66e-13 roll_short=6.4e-14 spec=1.9e-13 (sim 40.7s fit 1.0s)
+[fisher pod+lstsq p=0.1   full  ] Trel=8.96e-03 Trule=1.74e-03 Tsel=0.988 Arel=2.71e-04 span=2.5e-06 purity=0.963 eig_purity=1.000 dz=9.21e-05 roll_short=1.1e-05 spec=7.9e-07 (sim 74.9s fit 0.9s)
+[fisher pod+lstsq p=0.05  closed] Trel=5.70e-11 Trule=3.90e-11 Tsel=1.000 Arel=4.73e-12 span=1.2e-15 purity=0.963 eig_purity=1.000 dz=9.65e-13 roll_short=1.2e-13 spec=9.3e-14 (sim 37.6s fit 1.0s)
+[fisher pod+lstsq p=0.05  full  ] Trel=2.26e-02 Trule=4.19e-03 Tsel=0.971 Arel=2.22e-03 span=1.3e-05 purity=0.963 eig_purity=1.000 dz=3.16e-04 roll_short=3.7e-05 spec=4.0e-06 (sim 83.9s fit 1.7s)
+[fisher pod+lstsq p=0.02  closed] Trel=5.15e-11 Trule=3.80e-11 Tsel=1.000 Arel=4.13e-12 span=1.3e-15 purity=0.956 eig_purity=1.000 dz=1.11e-12 roll_short=5.1e-14 spec=4.0e-13 (sim 87.8s fit 1.0s)
+[fisher pod+lstsq p=0.02  full  ] Trel=9.11e-02 Trule=1.60e-02 Tsel=0.891 Arel=1.56e-02 span=1.7e-04 purity=0.955 eig_purity=1.000 dz=1.84e-03 roll_short=1.9e-04 spec=1.2e-05 (sim 111.9s fit 1.1s)
+saved to runs/M6a_fisher_pod

@@ -1,0 +1,7 @@
+args: {"K": 4, "nus": [0.02, 0.01], "alpha": 0.1, "F": 1.0, "nf": 4, "regimes": ["closed", "full"], "N_full": 48, "n_traj": 16, "n_test": 4, "t_spin": 2.0, "t_rec": 2.0, "dt": 0.01, "save_every": 10, "amp": 2.0, "dense": false, "seed": 0, "device": "cuda", "quick": true, "out": "runs/S2_smoke_ns"}
+modes n=80; features/output: masked ~14 (dense would need 3321); device=cuda
+[NS mask nu=0.02   closed] Trel=1.78e-14 Trule=1.78e-14 Tsel=1.000 T(|k|<=K/2)=2.0e-15 Adiag=1.96e-15 forcing=1.4e-15 dz=6.04e-15 closure=6.5e-16 nu_t_err=5.7e+00 roll_short=3.6e-16 spec=8.2e-16 (sim 3.1s fit 1.4s)
+[NS mask nu=0.02   full  ] Trel=8.82e-01 Trule=8.82e-01 Tsel=1.000 T(|k|<=K/2)=1.2e-01 Adiag=3.27e-01 forcing=7.4e-02 dz=4.18e-01 closure=4.6e-01 nu_t_err=3.9e-01 roll_short=2.1e-02 spec=4.3e-02 (sim 1.5s fit 1.3s)
+[NS mask nu=0.01   closed] Trel=8.13e-15 Trule=8.13e-15 Tsel=1.000 T(|k|<=K/2)=2.5e-15 Adiag=3.10e-15 forcing=2.2e-15 dz=3.99e-15 closure=5.8e-16 nu_t_err=8.8e+00 roll_short=2.8e-16 spec=1.4e-15 (sim 1.4s fit 1.4s)
+[NS mask nu=0.01   full  ] Trel=6.98e-01 Trule=6.98e-01 Tsel=1.000 T(|k|<=K/2)=1.8e-01 Adiag=6.57e-01 forcing=6.8e-02 dz=4.94e-01 closure=5.1e-01 nu_t_err=4.4e-01 roll_short=2.5e-02 spec=7.0e-02 (sim 1.4s fit 1.4s)
+saved to runs/S2_smoke_ns

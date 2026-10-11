@@ -1,0 +1,7 @@
+args: {"pde": "varvisc", "params": [0.2, 0.1, 0.05], "regimes": ["full"], "K": 8, "Kv": 3, "eps": 0.3, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "none", "mask_selection": false, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M5_varvisc_ood_gap_lstsq"}
+[varvisc] features/output: lin 17, quad 153, cubic 0, input 119
+sanity: energy-constraint residual of TRUE T = 0.00e+00
+[varvisc lstsq p=0.2   full  ] Trel=1.59e-01 Trule=1.62e-02 Tsel=0.739 A_diag_rel_to_visc=4.27e-02 dz=1.96e-02 roll=1.98e-04 closure=1.5e-02 nu_t_err=1.7e-01 Lrel=9.97e-02 Lrule=3.37e-02 Lsel=0.838 OOD_dz=1.10e-01 OOD_roll=7.64e-03 (sim 143.8s fit 31.6s)
+[varvisc lstsq p=0.1   full  ] Trel=2.87e-01 Trule=4.93e-02 Tsel=0.613 A_diag_rel_to_visc=1.93e-01 dz=5.56e-02 roll=2.04e-03 closure=5.5e-02 nu_t_err=4.0e-02 Lrel=3.13e-01 Lrule=1.29e-01 Lsel=0.606 OOD_dz=1.38e-01 OOD_roll=2.05e-02 (sim 204.7s fit 28.7s)
+[varvisc lstsq p=0.05  full  ] Trel=3.82e-01 Trule=9.78e-02 Tsel=0.529 A_diag_rel_to_visc=5.82e-01 dz=1.20e-01 roll=1.46e-02 closure=1.5e-01 nu_t_err=3.2e-02 Lrel=7.86e-01 Lrule=3.09e-01 Lsel=0.320 OOD_dz=2.01e-01 OOD_roll=3.76e-02 (sim 141.2s fit 31.7s)
+saved to runs/M5_varvisc_ood_gap_lstsq

@@ -1,0 +1,12 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.5, 0.2, 0.1, 0.05, 0.02], "regimes": ["closed", "full"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 5, "noise": 0.0, "k_show": 3, "seed": 0, "quick": false, "out": "runs/E1a_nu_sweep"}
+[nu=0.5   closed] relT=3.70e-13 relT_rule=3.39e-14 sel=1.000 offRule=3.39e-13 Ediag=1.45e-14 Eviol=1.90e-15 test_dz=1.92e-14 rollout=1.52e-11  (37.7s)
+[nu=0.5   full  ] relT=3.17e-02 relT_rule=3.31e-03 sel=0.935 offRule=4.48e-02 Ediag=9.51e-04 Eviol=1.11e-05 test_dz=2.22e-03 rollout=3.27e-06  (63.7s)
+[nu=0.2   closed] relT=1.57e-13 relT_rule=1.96e-14 sel=1.000 offRule=1.43e-13 Ediag=1.34e-14 Eviol=2.03e-15 test_dz=1.67e-14 rollout=2.44e-12  (33.7s)
+[nu=0.2   full  ] relT=8.63e-02 relT_rule=9.87e-03 sel=0.835 offRule=1.10e-01 Ediag=1.10e-02 Eviol=7.00e-05 test_dz=1.24e-02 rollout=9.95e-05  (57.9s)
+[nu=0.1   closed] relT=9.10e-14 relT_rule=1.73e-14 sel=1.000 offRule=1.05e-13 Ediag=1.52e-14 Eviol=2.02e-15 test_dz=1.49e-14 rollout=2.29e-12  (33.5s)
+[nu=0.1   full  ] relT=2.07e-01 relT_rule=3.77e-02 sel=0.704 offRule=3.08e-01 Ediag=5.83e-02 Eviol=6.85e-04 test_dz=3.90e-02 rollout=8.62e-04  (57.7s)
+[nu=0.05  closed] relT=4.10e-14 relT_rule=1.37e-14 sel=1.000 offRule=2.78e-14 Ediag=1.96e-14 Eviol=1.64e-15 test_dz=1.25e-14 rollout=6.88e-12  (33.5s)
+[nu=0.05  full  ] relT=3.45e-01 relT_rule=8.64e-02 sel=0.580 offRule=5.11e-01 Ediag=2.47e-01 Eviol=7.52e-03 test_dz=9.25e-02 rollout=9.22e-03  (57.7s)
+[nu=0.02  closed] relT=1.64e-14 relT_rule=9.83e-15 sel=1.000 offRule=7.89e-15 Ediag=1.83e-14 Eviol=8.90e-16 test_dz=9.54e-15 rollout=2.33e-11  (33.5s)
+[nu=0.02  full  ] relT=4.32e-01 relT_rule=1.42e-01 sel=0.506 offRule=4.84e-01 Ediag=1.02e+00 Eviol=2.69e-02 test_dz=1.79e-01 rollout=5.16e-02  (57.8s)
+saved to runs/E1a_nu_sweep

@@ -1,0 +1,30 @@
+args: {"pde": "burgers", "params": [0.5], "regimes": ["closed", "full"], "K": 8, "n_grid": 64, "kmax_full": 48, "n_traj": 40, "n_test": 10, "beta": 1.0, "steps": 600, "lr": 0.002, "width": 64, "depth": 3, "ridge": 1e-08, "method": "lstsq", "seed": 0, "device": "cuda", "quick": true, "out": "runs/S2_smoke_trunk"}
+[burgers p=0.5 closed] training trunk (beta=1.0, 600 steps, cuda)
+    step 0: recon 2.431e-04  dyn 9.795e-19
+    step 60: recon 2.843e-07  dyn 8.179e-19
+    step 120: recon 1.417e-07  dyn 8.209e-19
+    step 180: recon 9.008e-08  dyn 8.260e-19
+    step 240: recon 6.890e-08  dyn 8.378e-19
+    step 300: recon 5.867e-08  dyn 8.515e-19
+    step 360: recon 5.286e-08  dyn 8.613e-19
+    step 420: recon 4.948e-08  dyn 8.662e-19
+    step 480: recon 4.771e-08  dyn 8.681e-19
+    step 540: recon 4.702e-08  dyn 8.688e-19
+    step 599: recon 4.691e-08  dyn 8.689e-19
+[burgers p=0.5   closed trunk] Trel=2.31e-05 Trule=1.62e-05 Tsel=1.000 Arel=7.30e-06 span=1.5e-05 recon=3.2e-04 purity=0.726 eig_purity=1.000 dz=2.60e-09 roll_short=2.6e-10 spec=6.8e-11
+[burgers p=0.5   closed pod  ] Trel=4.78e-08 Trule=8.35e-09 Tsel=1.000 Arel=1.63e-09 span=1.3e-15 recon=1.3e-15 purity=0.689 eig_purity=1.000 dz=2.44e-09 roll_short=2.0e-10 spec=4.1e-11
+[burgers p=0.5 full] training trunk (beta=1.0, 600 steps, cuda)
+    step 0: recon 2.446e-04  dyn 9.125e-08
+    step 60: recon 2.727e-06  dyn 3.553e-08
+    step 120: recon 2.562e-06  dyn 3.581e-08
+    step 180: recon 2.489e-06  dyn 3.585e-08
+    step 240: recon 2.463e-06  dyn 3.581e-08
+    step 300: recon 2.443e-06  dyn 3.576e-08
+    step 360: recon 2.427e-06  dyn 3.573e-08
+    step 420: recon 2.414e-06  dyn 3.571e-08
+    step 480: recon 2.406e-06  dyn 3.570e-08
+    step 540: recon 2.403e-06  dyn 3.569e-08
+    step 599: recon 2.402e-06  dyn 3.569e-08
+[burgers p=0.5   full   trunk] Trel=1.16e+00 Trule=1.57e-01 Tsel=0.398 Arel=1.68e-02 span=1.4e-04 recon=1.8e-03 purity=0.714 eig_purity=0.999 dz=3.98e-02 roll_short=4.2e-03 spec=2.0e-04
+[burgers p=0.5   full   pod  ] Trel=1.16e+00 Trule=1.59e-01 Tsel=0.396 Arel=1.68e-02 span=9.4e-05 recon=2.1e-03 purity=0.683 eig_purity=0.999 dz=3.99e-02 roll_short=4.3e-03 spec=1.7e-04
+saved to runs/S2_smoke_trunk

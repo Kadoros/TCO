@@ -1,0 +1,6 @@
+args: {"K": 6, "Ka": 3, "Kf": 12, "fK": 6, "sigmas": [0.3, 0.6, 1.0], "sigma_ood_factor": 1.5, "tau": 2.0, "alpha": 2.0, "N": 64, "regimes": ["full"], "n_train": 400, "n_test": 50, "refine_steps": 0, "refine_lr": 0.001, "device": null, "seed": 0, "quick": false, "out": "runs/S2_darcy_rough"}
+u modes 168, a modes 49, features/output <= 48 (dense would need 8232)
+[Darcy sigma=0.3  full  ] Lrel=2.75e+00 L(|k|<=K/2)=3.3e-01 u_test: learned=6.77e-03 naive=6.00e-03 | u_OOD(sigma x1.5): learned=1.11e-02 naive=1.00e-02 (20.6s + 4.7s)
+[Darcy sigma=0.6  full  ] Lrel=1.83e+00 L(|k|<=K/2)=2.6e-01 u_test: learned=1.69e-02 naive=1.27e-02 | u_OOD(sigma x1.5): learned=2.73e-02 naive=2.24e-02 (16.2s + 4.5s)
+[Darcy sigma=1.0  full  ] Lrel=1.27e+00 L(|k|<=K/2)=2.4e-01 u_test: learned=3.92e-02 naive=2.34e-02 | u_OOD(sigma x1.5): learned=6.89e-02 naive=4.46e-02 (18.8s + 6.9s)
+saved to runs/S2_darcy_rough

@@ -1,0 +1,48 @@
+args: {"regimes": ["closed", "full"], "models": ["deeponet_joint", "opinf"], "trunk": "fourier", "K": 8, "n_grid": 64, "n_fine": 192, "n_inputs": 32, "n_test_inputs": 6, "n_ic": 8, "n_t": 8, "T_obs": 1.0, "amp": 1.0, "nu_range": [0.05, 0.25], "nu_modes": 2, "nu_amp": 0.2, "f_amp": 0.5, "trunk_steps": 1500, "steps": 800, "lr": 0.001, "batch": 1024, "width": 256, "depth": 3, "seeds": [0], "device": "cuda", "quick": true, "out": "runs/P1_smoke_joint"}
+[closed] data: train (32, 64, 64), test (6, 64, 64), dt_save 0.125 (0.2s)
+[closed] span residual (test)  basis: u 1.07e-15 u_t 1.50e-15 | pod: 1.75e-15 1.31e-15 | fourier: 1.07e-15 1.50e-15
+[closed] cond([1,c]) per training input: median 1.30e+01, max 2.86e+01
+[closed] basis 'shared': extractor check 3.8e-11, span residual u 1.07e-15 u_t 1.50e-15
+[closed] extractor check on Galerkin generator: rel err 3.8e-11
+[closed] galerkin-on-basis reference: u_t err 3.47e-15 (in span 3.13e-15), rollout 1.58e-08
+    [closed deeponet_joint s0] step 0: field u_t loss 1.011e+00
+    [closed deeponet_joint s0] step 160: field u_t loss 8.073e-01
+    [closed deeponet_joint s0] step 320: field u_t loss 5.151e-01
+    [closed deeponet_joint s0] step 480: field u_t loss 3.834e-01
+    [closed deeponet_joint s0] step 640: field u_t loss 3.740e-01
+    [closed deeponet_joint s0] step 799: field u_t loss 3.562e-01
+[closed] basis 'deeponet_joint s0': extractor check 3.5e-11, span residual u 1.29e-01 u_t 3.72e-01
+[closed deeponet_joint s0] u_t 6.82e-01 (in span 6.16e-01) roll 4.87e-01 | b 6.87e-01 A 9.54e-01 T 8.70e-01 | T_var 3.67e-01 (R2 nu 0.27) params 220962 (6.1s) | direct u_t 6.76e-01
+    [closed opinf] least squares with 1043 features per output, 2048 samples
+[closed opinf    s0] u_t 1.19e-14 (in span 1.18e-14) roll 1.58e-08 | b 3.61e-11 A 2.37e-11 T 6.93e-11 | T_var 1.78e-11 (R2 nu 0.26) params 17731 (0.4s)
+[full] data: train (32, 64, 64), test (6, 64, 64), dt_save 0.125 (6.5s)
+[full] span residual (test)  basis: u 4.45e-02 u_t 3.53e-01 | pod: 4.52e-02 3.54e-01 | fourier: 4.45e-02 3.53e-01
+[full] cond([1,c]) per training input: median 1.31e+01, max 2.88e+01
+[full] basis 'shared': extractor check 4.3e-11, span residual u 4.45e-02 u_t 3.53e-01
+[full] extractor check on Galerkin generator: rel err 4.3e-11
+[full] galerkin-on-basis reference: u_t err 3.68e-01 (in span 1.10e-01), rollout 2.84e-02
+    [full deeponet_joint s0] step 0: field u_t loss 1.022e+00
+    [full deeponet_joint s0] step 160: field u_t loss 8.332e-01
+    [full deeponet_joint s0] step 320: field u_t loss 5.478e-01
+    [full deeponet_joint s0] step 480: field u_t loss 4.500e-01
+    [full deeponet_joint s0] step 640: field u_t loss 5.317e-01
+    [full deeponet_joint s0] step 799: field u_t loss 4.724e-01
+[full] basis 'deeponet_joint s0': extractor check 8.1e-11, span residual u 1.17e-01 u_t 4.83e-01
+[full deeponet_joint s0] u_t 7.31e-01 (in span 6.27e-01) roll 4.62e-01 | b 7.05e-01 A 9.45e-01 T 8.78e-01 | T_var 3.73e-01 (R2 nu 0.27) params 220962 (5.5s) | direct u_t 7.27e-01
+    [full opinf] least squares with 1043 features per output, 2048 samples
+[full opinf    s0] u_t 5.94e-01 (in span 5.11e-01) roll 6.37e-02 | b 2.51e-01 A 1.69e-01 T 1.77e+00 | T_var 9.54e-01 (R2 nu 0.53) params 17731 (0.4s)
+| regime | model | u_t err | u_t err in span | rollout | b_rel | A_rel | T_rel | T_var | T_var R2(nu) | params |
+|---|---|---|---|---|---|---|---|---|---|---|
+| closed | deeponet_joint | 6.82e-01 | 6.16e-01 | 4.87e-01 | 6.87e-01 | 9.54e-01 | 8.70e-01 | 3.67e-01 | 0.27 | 220962 |
+| closed | opinf | 1.19e-14 | 1.18e-14 | 1.58e-08 | 3.61e-11 | 2.37e-11 | 6.93e-11 | 1.78e-11 | 0.26 | 17731 |
+| closed | galerkin (ref) | 3.47e-15 | 3.13e-15 | 1.58e-08 | 0 | 0 | 0 | 0 | - | - |
+| full | deeponet_joint | 7.31e-01 | 6.27e-01 | 4.62e-01 | 7.05e-01 | 9.45e-01 | 8.78e-01 | 3.73e-01 | 0.27 | 220962 |
+| full | opinf | 5.94e-01 | 5.11e-01 | 6.37e-02 | 2.51e-01 | 1.69e-01 | 1.77e+00 | 9.54e-01 | 0.53 | 17731 |
+| full | galerkin (ref) | 3.68e-01 | 1.10e-01 | 2.84e-02 | 0 | 0 | 0 | 0 | - | - |
+
+| regime | span u (basis) | span u_t (basis) | span u (POD) | span u_t (POD) | span u (Fourier) | span u_t (Fourier) | cond[1,c] median / max |
+|---|---|---|---|---|---|---|---|
+| closed | 1.07e-15 | 1.50e-15 | 1.75e-15 | 1.31e-15 | 1.07e-15 | 1.50e-15 | 1.3e+01 / 2.9e+01 |
+| full | 4.45e-02 | 3.53e-01 | 4.52e-02 | 3.54e-01 | 4.45e-02 | 3.53e-01 | 1.3e+01 / 2.9e+01 |
+
+saved to runs/P1_smoke_joint

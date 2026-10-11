@@ -1,0 +1,3 @@
+args: {"K": 8, "kmax_full": 128, "nus": [0.1], "regimes": ["closed"], "n_traj": 200, "n_test": 40, "t_final": 2.0, "dt": 0.001, "save_every": 20, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 5, "noise": 0.0001, "k_show": 3, "seed": 0, "quick": false, "out": "runs/E1c_noise1e-4"}
+[nu=0.1   closed] relT=8.07e-04 relT_rule=5.65e-05 sel=0.998 offRule=8.94e-04 Ediag=1.15e-05 Eviol=2.47e-06 test_dz=7.78e-05 rollout=7.70e-06  (37.5s)
+saved to runs/E1c_noise1e-4

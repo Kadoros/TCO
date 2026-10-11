@@ -1,0 +1,10 @@
+args: {"pde": "ks", "params": [0.1, 0.05, 0.02], "regimes": ["closed", "full"], "K": 12, "Kv": 3, "eps": 0.5, "eps_ood": 0.9, "kmax_full": 128, "n_traj": 200, "n_test": 40, "t_final": 5.0, "dt": 0.001, "save_every": 50, "amp": 1.0, "mean_amp": 0.5, "kmax_ic": null, "ridge": 1e-10, "method": "lstsq", "stlsq_thresh": 0.02, "stlsq_iter": 8, "energy_constraint": false, "closure": "none", "mask_selection": false, "label": null, "k_show": 3, "seed": 0, "quick": false, "out": "runs/M3_ks_lstsq"}
+[ks] features/output: lin 25, quad 325, cubic 0, input 0
+sanity: energy-constraint residual of TRUE T = 0.00e+00
+[ks lstsq p=0.1   closed] Trel=5.28e-10 Trule=6.56e-11 Tsel=1.000 A_diag_rel_err=2.79e-13 dz=5.93e-13 roll=2.46e-04 closure=8.6e-16 nu_t_err=7.0e+02 (sim 111.7s fit 1.9s)
+[ks lstsq p=0.1   full  ] Trel=8.90e-02 Trule=1.77e-02 Tsel=0.860 A_diag_rel_err=6.60e-06 dz=1.47e-04 roll=2.51e-04 closure=3.0e-04 nu_t_err=1.1e-01 (sim 238.9s fit 1.8s)
+[ks lstsq p=0.05  closed] Trel=8.86e-11 Trule=7.31e-12 Tsel=1.000 A_diag_rel_err=2.12e-12 dz=6.62e-13 roll=1.89e-01 closure=1.0e-15 nu_t_err=1.8e+02 (sim 115.1s fit 1.3s)
+[ks lstsq p=0.05  full  ] Trel=3.42e-01 Trule=9.50e-02 Tsel=0.714 A_diag_rel_err=1.39e-03 dz=7.22e-03 roll=2.09e-01 closure=1.8e-02 nu_t_err=9.7e-03 (sim 185.5s fit 1.3s)
+[ks lstsq p=0.02  closed] Trel=7.13e-13 Trule=7.10e-13 Tsel=1.000 A_diag_rel_err=1.57e-12 dz=2.54e-13 roll=1.39e+00 closure=6.8e-16 nu_t_err=1.2e+02 (sim 95.2s fit 1.2s)
+[ks lstsq p=0.02  full  ] Trel=1.34e-01 Trule=1.28e-01 Tsel=0.888 A_diag_rel_err=1.19e-01 dz=1.16e-01 roll=1.27e+00 closure=2.6e-01 nu_t_err=1.1e-02 (sim 157.3s fit 1.2s)
+saved to runs/M3_ks_lstsq
